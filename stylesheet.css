@@ -1,0 +1,89 @@
+/**
+Personal Website of Patrick Shinn
+Author: Patrick Shinn
+
+Special Thanks to:
+    CSSReset.com - How To Keep Footer At Bottom of Page with CSS for:
+    http://www.cssreset.com/2010/css-tutorials/how-to-keep-footer-at-bottom-of-page-with-css/
+**/
+
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+    background-color: lightgray;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+header {
+	padding:1px;
+}
+/**
+Page Navigation ---------------------------------------------------------------------
+**/
+header nav{
+    background-color: black;
+}
+
+#global_nav {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    margin-left: -.1em;
+    margin-right: -.1em;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .15em;
+    padding-bottom: .15em;
+}
+#global_nav:link {
+    color: white;
+    text-decoration: none;
+}
+#global_nav:visited {
+    color: white;
+    text-decoration: none;
+}
+#global_nav:hover {
+    color: white;
+    text-decoration: none;
+    background-color: azure;
+}
+#head {
+    margin-bottom: -.2em;
+}
+header hr {
+    
+}
+/**
+Main Body ---------------------------------------------------------------------------
+**/
+main {
+    margin: auto;
+    width: 90%;
+}
+
+/**
+Footer -------------------------------------------------------------------------------
+**/
+footer {
+    font-size: 1.2em;
+    color: aliceblue;
+    text-align: center;
+    background:grey;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+footer table {
+    margin: auto;
+    margin-top: .2em;
+    margin-bottom: -.8em;
+}
+footer img{
+    width: 3.5em;
+    height: 3.5em;
+}
