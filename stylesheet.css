@@ -13,6 +13,7 @@ body {
 	padding:0;
 	height:100%;
     background-color: lightgray;
+    font-size: 1.2em;
 }
 #wrapper {
 	min-height: 100%;
@@ -54,15 +55,27 @@ header nav{
 Main Body ---------------------------------------------------------------------------
 **/
 main {
-    padding-bottom: 120px;
+    padding-bottom: 170px;
     margin: auto;
     width: 90%;
+}
+.link{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+.link:visted{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+.link:hover{
+    color: aqua;
+    text-align-last: none;
 }
 /**
 Footer -------------------------------------------------------------------------------
 **/
 footer {
-    height: 120px;
+    height: 165px;;
     font-size: 1.2em;
     color: aliceblue;
     text-align: center;
