@@ -35,7 +35,7 @@ header nav{
     background-color: darkgrey;
 }
 
-#global_nav {
+.global_nav {
     font-family: sans-serif;
     font-size: 1.5em;
     margin-left: -.1em;
@@ -45,15 +45,15 @@ header nav{
     padding-bottom: .13em;
     
 }
-#global_nav:link {
+.global_nav:link {
     color: white;
     text-decoration: none;
 }
-#global_nav:visited {
+.global_nav:visited {
     color: white;
     text-decoration: none;
 }
-#global_nav:hover {
+.global_nav:hover {
     color: white;
     text-decoration: none;
     background-color: grey;
