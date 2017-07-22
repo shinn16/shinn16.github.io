@@ -117,11 +117,6 @@ footer {
     text-align: center;
     background: #313131;
 	width:100%;
-    /*Footer fix for Firefox */
-    padding-bottom: .1em;
-    margin-bottom: -.1em;
-    margin-left: -.1em;
-    padding-left: .1em;
 	position:absolute;
 	bottom:0;
 	left:0;
