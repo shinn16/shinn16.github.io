@@ -12,10 +12,8 @@ body {
 	margin:0;
 	padding:0;
 	height:100%;
-    background-image: url(content/images/IMG_8189.JPG);
-    background-size: cover;
-    overflow-x: hidden;
     font-size: 1.2em;
+    overflow-x: hidden;
 }
 #wrapper {
 	min-height: 100%;
@@ -27,12 +25,14 @@ header {
 Page Navigation ---------------------------------------------------------------------
 **/
 header nav{
-    background-color: black;
+    background-color: #313131;
 }
 
 /*High lights the current page tab on the nav bar*/
 #current_page{
-    background-color: darkgrey;
+    background-color: darkcyan;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
 }
 
 .global_nav {
@@ -56,7 +56,9 @@ header nav{
 .global_nav:hover {
     color: white;
     text-decoration: none;
-    background-color: grey;
+    background-color: darkcyan;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
 }
 
 /**
@@ -66,7 +68,6 @@ main {
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 2em;
-    background-color: floralwhite;
     padding-bottom: 200px;
     margin: auto;
     width: 80%;
@@ -106,15 +107,15 @@ main {
 .accolades h4{
     margin-bottom: -.1em;
 }
+
 /**
 Footer -------------------------------------------------------------------------------
 **/
 footer {
-    height: 165px;;
-    font-size: 1.2em;
+    height: 120px;;
     color: aliceblue;
     text-align: center;
-    background:black;
+    background: #313131;
 	width:100%;
     /*Footer fix for Firefox */
     padding-bottom: .1em;
