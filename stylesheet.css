@@ -95,6 +95,17 @@ main {
     color: aqua;
     text-align-last: none;
 }
+
+.contentHeader{
+    margin-bottom: -.8em;
+}
+
+.accolades{
+     list-style-type: none;
+}
+.accolades h4{
+    margin-bottom: -.1em;
+}
 /**
 Footer -------------------------------------------------------------------------------
 **/
