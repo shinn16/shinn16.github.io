@@ -121,7 +121,7 @@ main {
                      rgba(20,20,20, .2), 
                      rgba(20,20,20, .2)),
                      url(content/images/ocean.jpg);
-    padding: 18em;
+    padding: 19em;
     background-repeat: no-repeat;
     background-position: center;
 }
