@@ -12,11 +12,11 @@
                 <table>
                     <tr>
                         <td id="navHeaderTd"><h1><a id="navHeader" href="index.html"><img id="ps" src="content/images/PS.png">Patrick Shinn</a></h1></td>
-                        <td><a class="headerNav" href="research.html">Research</a></td>
+                        <td><a class="headerNav" href="research.html" id="currentPage">Research</a></td>
                         <td><a class="headerNav" href="about.html">About</a> </td>
                         <td><a class="headerNav" href="projects.html">Projects</a></td>
                         <td><a class="headerNav" href="resume.html">Résumé</a></td>
-                        <td><a class="headerNav" href="contact.html" id="currentPage">Contact</a></td>
+                        <td><a class="headerNav" href="contact.html">Contact</a></td>
                     </tr>
                 </table>
                 <div id="borderLine"></div>
@@ -24,15 +24,43 @@
             <main>
                 <article>
                     <h1 class="contentHeader">Research</h1>
-                    <ul class="accolades">
-                        <li><h4>Marshall University</h4></li>
-                        <li>
-                            <ul>
-                                <li><a class="link" target="_blank">Flood Detection and Avoidance using a Wireless Sensor Network</a>, funded by <a class="link" target="_blank" href="http://www.wvspacegrant.org/about/wvsgc/">NASA West Virginia Space Grant Consortium Undergraduate Fellowship</a></li>
-                                <li><a class="link" target="_blank" href="https://shinn16.github.io/Load-Testing/">Load Testing in a Virtual Environment VS a Physical Environment</a>, funded by <a class="link" target="_blank" href="http://www.marshall.edu/sure/">Marshall SURE</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <p class="content">
+                        I have been working on various research projects since 2016. Through my research, I have gained valuable experience in networking, cloning tools, virtual machines, and IoT. My fields of interest are IoT, Data Mining, and Distributed Computing. Below you can explore my past and ongoing research projects.
+                    </p>
+                    <div class="content">
+                        <input type="radio" name="research" id="ongoing" checked="checked"><label for="ongoing" id="ongoingLabel">Ongoing Research</label>
+                        <input type="radio" name="research" id="completed"><label for="completed" id="completedLabel">Completed Research</label>
+
+                        <div id="ongoingResearch">
+                            <ol>
+                                <li>
+                                    <div>
+                                        <h3 class="contentHeader"><a class="link" target="_blank">Flood Detection and Avoidance using a Wireless Sensor Network</a>, funded by <a class="link" target="_blank" href="http://www.wvspacegrant.org/about/wvsgc/">NASA West Virginia Space Grant Consortium Undergraduate Fellowship</a></h3>
+                                        <p class="content">
+                                            <b>Abstract: </b>Flash flooding is a very sudden, destructive natural disaster. Per the National Oceanic and
+                                            Atmospheric Administration (NOAA), in the United States the national 30-year average for flood
+                                            deaths is 127 a year. In this paper, I will propose a system of cheap and effective wireless sensor
+                                            platforms that will provide real time data on the current state of a rising body of water
+                                            and serve as an early warning system for flooding that will help save lives and property.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div id="completedResearch">
+                            <ol>
+                                <li>
+                                    <div>
+                                        <h3 class="contentHeader"><a class="link" target="_blank" href="https://shinn16.github.io/Load-Testing/">Load Testing in a Virtual Environment VS a Physical Environment</a>, funded by <a class="link" target="_blank" href="http://www.marshall.edu/sure/">Marshall SURE</a></h3>
+                                        <p class="content">
+                                            <b>Abstract: </b>Load testing is one of the means for evaluating the performance of Ultra Large Scale Systems (ULSS). At the end of  a load test, performance analysts must analyze thousands of performance counters from hundreds of machines under test. These performance counters are measures of run-time system properties such as CPU utilization, Disk I/O, memory consumption, and network traffic. Analysts observe counters to find out if the system is meeting its Service Level Agreements (SLAs). Typically, to save time and money, load tests are conducted in a virtualized environment prior to release of the enterprise software. Nevertheless, to date there do not exist any research to study if there exists any overhead in the use of virtual machines for load testing in comparison to physical machines. In our work, we perform a study on two open-source benchmarks systems DS2 and Rubis, where load test are conducted on both virtual and physical environments. We compare the results of load tests conducted using both the environment, identify any discrepancy (if exists). Further, we explore the rational of the observed discrepancies.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
                 </article>
             </main>
             <footer>

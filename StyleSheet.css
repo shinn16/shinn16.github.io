@@ -91,6 +91,23 @@ main {
     color: white;
 }
 
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    font-size: 1.2em;
+    margin-right: 2%;
+    padding: .4em;
+    background: teal;
+    border-radius: .3em;
+    color: white;
+}
+
+label:hover{
+    box-shadow: 10px 10px 5px grey;
+}
+
 /*Classes*/
 .clear{
     clear: both;
@@ -163,6 +180,32 @@ main {
     margin-top: -.55em;
     margin-right: .3em;
 }
+
+#ongoingResearch{
+    display: none;
+}
+
+#completedResearch{
+    display: none;
+}
+
+input#ongoing:checked ~div#ongoingResearch{
+    display: block;
+}
+
+input#ongoing:checked ~label#ongoingLabel{
+    color: aqua;
+
+}
+
+input#completed:checked ~div#completedResearch{
+    display: block;
+}
+
+input#completed:checked ~label#completedLabel{
+    color: aqua;
+}
+
 
 /*####################### Footer ##########################*/
 footer {
