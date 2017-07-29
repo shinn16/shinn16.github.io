@@ -32,16 +32,24 @@ header {
 	background: teal;
 }
 
-header table{
-    width: 98%;
-    margin: auto;
-    text-align: center;
+header ul{
+    float: right;
+    margin-top: 1.4em;
 }
+
+header li{
+    text-align: right;
+    list-style: none;
+    display: inline;
+    font-size: 1.2em;
+    padding: 1.5em;
+}
+
 
 /*Classes*/
 .headerNav{
     color: #F1EAD8;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-decoration: none;
     -webkit-transition: color 1s;
     -moz-transition: color 1s;
@@ -53,16 +61,10 @@ header table{
  }
 
 /*IDs*/
-
-#navHeader{
-    color: #F1EAD8;
-    text-decoration: none;
-    
-}
-#navHeaderTd{
-    text-align: left;
-    width: 65%;
-    white-space: nowrap;
+#headerImg{
+    width: 15%;
+    margin-left: 1em;
+    margin-top: .2em;
 }
 
 #navHeader:hover{
@@ -170,15 +172,6 @@ label:hover{
     margin-left: -15%;
     margin-right: 2%;
     border-radius: 1em;
-}
-
-#ps{
-    width: 6%;
-    height: 6%;
-    border-radius: .5em;
-    float: left;
-    margin-top: -.55em;
-    margin-right: .3em;
 }
 
 #ongoingResearch{
