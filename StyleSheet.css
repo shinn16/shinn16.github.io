@@ -228,3 +228,69 @@ footer {
 }
 
 /*####################### Moblie ##########################*/
+@media screen and (max-width: 1000px) {
+
+    /****** Nav ******/
+
+    /*Classes*/
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    /* IDS */
+    #headerImg{
+        width: 60%;
+    }
+
+    /****** Home ******/
+    #me{
+        margin-left: 33%;
+        margin-top: 5em;
+        width: 33%;
+        float: none;
+    }
+
+    #home{
+        padding: 0;
+    }
+
+    #home h1{
+        text-align: center;
+        margin: auto;
+    }
+
+    #home p{
+        margin: auto;
+        text-align: center;
+        width: 80%;
+        padding-bottom: 33%;
+    }
+
+    /****** Footer ******/
+    #footerNav{
+        padding-top: .35em;
+        margin: auto;
+        width: 40%;
+    }
+
+    #footerNav img{
+        width: 70%;
+    }
+
+
+}
