@@ -148,6 +148,12 @@ label:hover{
     margin-bottom: -.15em;
 }
 
+.badgeTable{
+    margin-left: 1.8%;
+    margin-top: .35em;
+    margin-bottom: -1em;
+}
+
 /*IDs*/
 #home{
     overflow-y: hidden;
@@ -203,11 +209,11 @@ input#completed:checked ~label#completedLabel{
     color: aqua;
 }
 
-input#release:checked ~label#releasedLabel{
+input#released:checked ~label#releasedLabel{
     color: aqua;
 }
 
-input#release:checked ~div#releasedSoftware{
+input#released:checked ~div#releasedSoftware{
     display: block;
 }
 
