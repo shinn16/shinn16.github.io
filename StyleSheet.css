@@ -182,6 +182,10 @@ label:hover{
     display: none;
 }
 
+#releasedSoftware{
+    display: none;
+}
+
 input#ongoing:checked ~div#ongoingResearch{
     display: block;
 }
@@ -197,6 +201,14 @@ input#completed:checked ~div#completedResearch{
 
 input#completed:checked ~label#completedLabel{
     color: aqua;
+}
+
+input#release:checked ~label#releasedLabel{
+    color: aqua;
+}
+
+input#release:checked ~div#releasedSoftware{
+    display: block;
 }
 
 
@@ -277,6 +289,7 @@ footer {
     #home p{
         margin: auto;
         text-align: center;
+        font-size: 1.5em;
         width: 80%;
         padding-bottom: 33%;
     }
@@ -286,7 +299,7 @@ footer {
         padding-top: .35em;
         margin: auto;
         width: 40%;
-        padding-bottom: .35em;
+        padding-bottom: .5em;
     }
 
     #footerNav img{
