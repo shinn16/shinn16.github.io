@@ -325,14 +325,12 @@ footer {
 
     /****** Footer ******/
     #footerNav{
-        padding-top: .35em;
         margin: auto;
         width: 40%;
-        padding-bottom: .35em;
     }
 
     #footerNav img{
-        width: 70%;
+        width: 95%;
     }
 
 
