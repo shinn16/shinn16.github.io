@@ -261,14 +261,17 @@ footer {
     /****** Nav ******/
     header ul{
         background: grey;
-        border-radius: 20%;
-        display: none;
-        margin-right: .5em;
-        margin-top: -1em;
+        border-top-left-radius: 20%;
+        border-bottom-left-radius: 20%;
+        visibility: hidden;
         float: none;
         position: absolute;
-        top: 6;
+        margin: 0;
+        top: .2;
         right: 0;
+        opacity: 0;
+        -webkit-transition: visibility .5s, opacity .5s linear;
+        -moz-transition: visibility  .5s, opacity .5s linear;
     }
 
     header li{
@@ -280,7 +283,8 @@ footer {
     }
 
     input#dropdown:checked ~ul#navBar{
-        display: block;
+        visibility: visible;
+        opacity: 1;
     }
 
     /*Classes*/
@@ -291,6 +295,7 @@ footer {
     }
 
     #dropdownImg{
+
         width: 10%;
         margin-top: .5em;
         margin-right: 1em;
