@@ -296,7 +296,6 @@ footer {
     #home p{
         margin: auto;
         text-align: center;
-        font-size: 1.5em;
         width: 80%;
         padding-bottom: 33%;
     }
@@ -306,7 +305,7 @@ footer {
         padding-top: .35em;
         margin: auto;
         width: 40%;
-        padding-bottom: 1em;
+        padding-bottom: .35em;
     }
 
     #footerNav img{
