@@ -316,6 +316,13 @@ footer {
         padding-bottom: 33%;
     }
 
+
+    /******* Main *******/
+
+    main label{
+        font-size: .98em;
+    }
+
     /****** Footer ******/
     #footerNav{
         padding-top: .35em;
