@@ -277,8 +277,8 @@ footer {
 
     /****** Home ******/
     #me{
+        margin-top: 10%;
         margin-left: 33%;
-        margin-top: 33%;
         width: 33%;
         float: none;
     }
