@@ -260,14 +260,23 @@ footer {
 
     /****** Nav ******/
     header ul{
+        background: grey;
+        border-radius: 20%;
         display: none;
         margin-right: .5em;
         margin-top: -1em;
+        float: none;
+        position: absolute;
+        top: 6;
+        right: 0;
     }
 
     header li{
+        text-align: center;
         display: block;
         padding: 0;
+        margin-left: -.8em;
+        margin-right: .8em;
     }
 
     input#dropdown:checked ~ul#navBar{
