@@ -259,10 +259,8 @@ footer {
     /****** Nav ******/
     header ul{
         display: none;
-        position: relative;
-        bottom: -2.8em;
-        right: -4em;
-        margin-bottom: 3em;
+        margin-right: .5em;
+        margin-top: -1em;
     }
 
     header li{
