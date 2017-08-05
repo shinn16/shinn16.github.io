@@ -13,8 +13,8 @@ body {
 	padding:0;
 	height:100%;
     /*Edit past here*/
-    
-    background: linear-gradient(to bottom, rgba(243, 240, 235,0.3) 0%,rgba(243, 240, 235,0.3) 100%), url(content/images/PS.png);
+    background: #F1ECD8;
+    background-image: url(content/images/PS.png);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -257,7 +257,9 @@ footer {
 @media screen and (max-width: 1500px) {
 
     /****** body *****/
-
+    body{
+        background-size: 80% auto, cover;
+    }
     /****** Nav ******/
     header ul{
         background: grey;
