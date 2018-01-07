@@ -68,11 +68,6 @@ header li{
 	transition: color 1s;
 }
 
-#homeButton :visited{
-	text-decoration: none;
-	color:  #F1EAD8;
-}
-
 #homeButton:hover{
 	color: #20a4f3;
 }
