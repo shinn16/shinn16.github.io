@@ -63,6 +63,10 @@ header li{
 	margin-left: .2em;
 }
 
+#homeButton :visited{
+	text-decoration: none;
+}
+
 #navHeader:hover{
     text-decoration: none;
 
@@ -125,7 +129,7 @@ main label:hover{
 }
 .link:hover{
     text-decoration: none;
-    color: #231F20;
+    color:  #20a4f3;
 }
 .link:visited{
     text-decoration: none;
