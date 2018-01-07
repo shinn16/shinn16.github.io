@@ -59,12 +59,22 @@ header li{
 
 /*IDs*/
 #homeButton{
+	color: #F1EAD8;
 	font-size: 3em;
 	margin-left: .2em;
+	text-decoration: none;
+	-webkit-transition: color 1s;
+	-moz-transition: color 1s;
+	transition: color 1s;
 }
 
 #homeButton :visited{
 	text-decoration: none;
+	color:  #F1EAD8;
+}
+
+#homeButton:hover{
+	color: #20a4f3;
 }
 
 #navHeader:hover{
