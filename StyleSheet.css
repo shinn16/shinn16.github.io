@@ -65,7 +65,7 @@ header li{
 	text-decoration: none;
 	-webkit-transition: color 1s;
 	-moz-transition: color 1s;
-	transition: color 1s;
+	transition: 1s ease-in-out;
 }
 
 #homeButton:hover{
