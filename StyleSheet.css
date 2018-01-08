@@ -6,12 +6,21 @@
  *
  * NB: Make sure the value for 'padding-bottom' on #content is equal to or greater than the height of #footer.
  */
+
+/* For the font*/
+@font-face {
+	font-family: 'pt-sans';
+	src: url("content/fonts/ptsans/PT_Sans-Web-Regular.ttf") format('truetype');
+}
+
+
 html,
 body {
     /*For absolute footer, do not edit*/
-	margin:0;
-	padding:0;
-	height:100%;
+		font-family: 'pt-sans', Fallback, sans-serif;
+		margin:0;
+		padding:0;
+		height:100%;
     /*Edit past here*/
     background: white;
     background-attachment: fixed;
@@ -66,7 +75,8 @@ header li{
 	position: absolute;
 	left: 0;
 	top: 0;
-	font-size: 3em;
+	margin-left: .2em;
+	font-size: 2.5em;
 }
 
 #navHeader:hover{
@@ -167,10 +177,7 @@ main label:hover{
 /*IDs*/
 #home{
     overflow-y: hidden;
-    background-image: linear-gradient(
-                     rgba(20,20,20, .2),
-                     rgba(20,20,20, .2)),
-                     url(content/images/home.jpg);
+    background-image: url(content/images/home.jpg);
 		background-size: cover;
     padding: 20em;
     background-repeat: no-repeat;
