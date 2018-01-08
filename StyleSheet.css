@@ -57,19 +57,16 @@ header li{
     color: #20a4f3;
  }
 
+ header{
+	 position: relative;
+ }
+
 /*IDs*/
 #homeButton{
-	color: #F1EAD8;
+	position: absolute;
+	left: 0;
+	top: 0;
 	font-size: 3em;
-	margin-left: .2em;
-	text-decoration: none;
-	-webkit-transition: color 1s;
-	-moz-transition: color 1s;
-	transition: 1s ease-in-out;
-}
-
-#homeButton:hover{
-	color: #20a4f3;
 }
 
 #navHeader:hover{
