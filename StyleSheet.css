@@ -335,10 +335,11 @@ footer {
     }
 
     #dropdownImg{
-        width: 4em;;
-        margin-right: 1em;
-        display: block;
-        float: right;
+			margin-top: .1em;
+      width: 3.6em;
+      margin-right: 1em;
+      display: block;
+      float: right;
     }
 
     #dropdownImg img{
