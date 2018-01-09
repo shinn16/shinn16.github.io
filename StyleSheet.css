@@ -364,13 +364,13 @@ footer {
 
     #greeting h1{
 			width: 100%;
-			font-size: 2.5em;
+			font-size: 2em;
       text-align: center;
       margin: auto;
     }
 
     #greeting p{
-			font-size: 1.5em;
+			font-size: 1.2em;
       margin: auto;
       text-align: center;
       width: 80%;
