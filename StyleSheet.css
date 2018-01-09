@@ -310,6 +310,7 @@ footer {
         top: 2.8em;;
         right: 0;
         opacity: 0;
+				max-height: 0;
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
 				transition:all 500ms ease;
@@ -326,6 +327,7 @@ footer {
     input#dropdown:checked ~ul#navBar{
         visibility: visible;
         opacity: 1;
+				max-height: 300px;
     }
 
 		  input#dropdown:checked ~#dropdownImg{
