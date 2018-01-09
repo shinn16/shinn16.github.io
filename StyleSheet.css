@@ -108,9 +108,12 @@ header li{
 /*####################### Page Content ####################*/
 main {
     /*For absolute footer, do not edit*/
-	padding-bottom:120px; /* Height of the footer element */
     /*Edit past here*/
     color: white;
+}
+
+article{
+	padding-bottom: 120px; /* Height of the footer element */
 }
 
 input[type="radio"]{
