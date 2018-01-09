@@ -181,6 +181,7 @@ main label:hover{
 #home{
     overflow-y: hidden;
     background-image: url(content/images/home.jpg);
+		box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
 		background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
