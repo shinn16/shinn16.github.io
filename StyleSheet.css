@@ -36,6 +36,8 @@ body {
 /*################## Header and Page Nav ##################*/
 header {
 	background: #231F20;
+	position: relative;
+	height: 4.5em;
 }
 
 header ul{
@@ -66,11 +68,20 @@ header li{
     color: #20a4f3;
  }
 
- header{
-	 position: relative;
+ .borderLine{
+     background: #20a4f3;
+     width: 100%;
+     height: 5px;
  }
 
+
 /*IDs*/
+#topBorder{
+	position: absolute;
+	top: 4.5em;
+	left: 0;
+}
+
 #homeButton{
 	position: absolute;
 	left: 0;
@@ -99,11 +110,6 @@ header li{
     display: none;
 }
 
-#borderLine{
-    background: #20a4f3;
-    width: 100%;
-    height: 5px;
-}
 
 /*####################### Page Content ####################*/
 main {
@@ -285,6 +291,16 @@ footer {
         background-size: 80% auto, cover;
     }
     /****** Nav ******/
+		header{
+			height: 4em;
+		}
+
+		#topBorder{
+			position: absolute;
+			top: 4em;
+			left: 0;
+		}
+
     header ul{
         background: #231F20;
         border-bottom-left-radius: 20%;
@@ -319,7 +335,7 @@ footer {
     }
 
     #dropdownImg{
-        width: 10%;
+        width: 4em;;
         margin-right: 1em;
         display: block;
         float: right;
