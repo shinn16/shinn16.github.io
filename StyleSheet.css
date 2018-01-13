@@ -194,9 +194,9 @@ main label:hover{
 }
 
 #greeting{
-	float: right;
+	float: left;
 	margin-top: 10em;
-	margin-right: 50em;
+	margin-left: 2em;
 	width: 30%;
 }
 
@@ -286,9 +286,7 @@ footer {
 /*####################### Moblie ##########################*/
 @media screen and (max-width: 1900px){ /*Tables*/
 	#greeting{
-		float: right;
 		margin-top: 6.5em;
-		margin-right: 30em;
 		width: 31%;
 	}
 }
