@@ -195,8 +195,8 @@ main label:hover{
 
 #greeting{
 	float: right;
-	margin-top: 9%;
-	margin-right: 42%;
+	margin-top: 10em;
+	margin-right: 50em;
 	width: 30%;
 }
 
@@ -210,7 +210,7 @@ main label:hover{
 
 #me{
     float: left;
-    width: 15%;
+    width: 18em;
     border: 3px solid #20a4f3;
 		margin-top: 10%;
 		margin-left: 10%;
@@ -284,7 +284,16 @@ footer {
 }
 
 /*####################### Moblie ##########################*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1400px){ /*Tables*/
+	#greeting{
+		float: right;
+		margin-top: 6.5em;
+		margin-right: 30em;
+		width: 31%;
+	}
+}
+
+@media screen and (max-width: 800px) { /*Phones*/
 
     /****** body *****/
     body{
