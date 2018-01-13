@@ -286,8 +286,12 @@ footer {
 /*####################### Moblie ##########################*/
 @media screen and (max-width: 1900px){ /*Tables*/
 	#greeting{
-		margin-top: 6.5em;
+		margin-top: 5em;
 		width: 40%;
+	}
+
+	#me{
+		margin-top: 6em;
 	}
 }
 
