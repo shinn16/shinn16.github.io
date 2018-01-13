@@ -284,7 +284,7 @@ footer {
 }
 
 /*####################### Moblie ##########################*/
-@media screen and (max-width: 1400px){ /*Tables*/
+@media screen and (max-width: 1600px){ /*Tables*/
 	#greeting{
 		float: right;
 		margin-top: 6.5em;
