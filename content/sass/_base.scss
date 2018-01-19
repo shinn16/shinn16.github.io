@@ -8,7 +8,8 @@
  */
 
 
-@import "_varibles.scss";
+@import "utils/_utils"; // utilites
+
 
 // ##################### Document ##############################
 html,
@@ -30,6 +31,10 @@ body {
     /*Edit past here*/
 }
 
+input[type="radio"]{
+    display: none;
+}
+
 // ##################### Header and Page Nav #####################
 header {
 	background: $main-color;
@@ -48,12 +53,8 @@ header {
     padding: 1.5em;
 
     a{
-      color: $nav-color;
+      @extend %navLink;
       font-size: 1.2em;
-      text-decoration: none;
-      -webkit-transition: color 1s;
-      -moz-transition: color 1s;
-      transition: color 1s;
 
       &:hover{
         color: $accent-color;
@@ -68,11 +69,19 @@ header {
 
 // ### IDs ###
 #homeButton{
+  @extend %navLink;
 	position: absolute;
-	left: 0;
-	top: 0;
-	margin-left: .2em;
+	left: .2em;
+	top: .1em;
 	font-size: 3em;
+
+  &:hover{
+    color: $accent-color;
+  }
+  &:visited{
+    text-decoration: none;
+    color: $nav-color;
+  }
 }
 
 #currentPage{
@@ -102,24 +111,31 @@ header {
 }
 
 main {
-    color: white;
+    color: black;
+		width: 96%;
+		margin: auto;
 }
 
 article{
 	padding-bottom: 120px; /* Height of the footer element */
 
+	h1,h2,h3,h4{
+    margin-bottom: -.35em;
+	}
+	p{
+    width: 95%
+	}
   a{
-    text-decoration: none;
-    color: $link-color;
+		text-decoration: none;
+	  color: $link-color;
 
-    &:hover{
-      text-decoration: none;
-      color: $accent-color;
-    }
-    &:visited{
-      text-decoration: none;
-      color: $link-color;
-    }
+	  &:hover{
+	    color: $accent-color;
+	  }
+		&visited{
+			color: $link-color;
+			text-decoration: none;
+		}
   }
 }
 

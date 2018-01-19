@@ -1,0 +1,13 @@
+@mixin allTransition ($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin allFilter($filter-option) {
+  -webkit-filter: $filter-option;
+  -moz-filter: $filter-option;
+  -o-filter: $filter-option;
+  filter: $filter-option;
+}

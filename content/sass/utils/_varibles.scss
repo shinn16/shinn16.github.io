@@ -1,7 +1,7 @@
 /* For the font*/
 @font-face {
 	font-family: 'pt-sans';
-	src: url("content/fonts/ptsans/PT_Sans-Web-Regular.ttf") format('truetype');
+	src: url("../fonts/ptsans/PT_Sans-Web-Regular.ttf") format('truetype');
 }
 
 $font: 'pt-sans', Fallback, sans-serif;

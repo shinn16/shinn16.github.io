@@ -1,0 +1,7 @@
+// common styles made for easy reuse
+
+%navLink{
+  text-decoration: none;
+  color: $nav-color;
+  @include allTransition(color 1s);
+}
