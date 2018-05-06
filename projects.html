@@ -31,11 +31,11 @@
                         I have a variety of projects going on at the moment, most of which you can actively track on <a  href="https://github.com/shinn16" target="_blank">GitHub</a>.
                     </p>
                     <div >
-                        <input type="radio" name="projects" id="released" checked="checked"><label for="released" id="releasedLabel">Released Software</label>
-                        <input type="radio" name="projects" id="ongoing"><label for="ongoing" id="ongoingLabel">Ongoing Projects</label>
-                        <input type="radio" name="projects" id="completed"><label for="completed" id="completedLabel">Completed Projects</label>
+                      <label class="tabs" style="color: #20a4f3;" onclick="openTab('releasedSoftware', this)">Released Software</label>
+                      <label class="tabs" onclick="openTab('ongoingProjects', this)">Ongoing Projects</label>
+                      <label class="tabs" onclick="openTab('completedProjects', this)">Completed Projects</label>
 
-                        <div id="releasedSoftware">
+                        <div id="releasedSoftware" class="tab">
                             <ol>
                                  <li>
                                     <div>
@@ -53,7 +53,7 @@
                             </ol>
                         </div>
 
-                        <div id="ongoingResearch">
+                        <div id="ongoingProjects" class="tab" style="display: none;">
                             <ol>
                                 <li>
                                     <div>
@@ -72,7 +72,7 @@
                             </ol>
                         </div>
 
-                        <div id="completedResearch">
+                        <div id="completedProjects" class="tab" style="display: none;">
                             <h4 >Personal</h4>
                             <ol>
                                 <li>
