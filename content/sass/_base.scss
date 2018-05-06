@@ -57,10 +57,11 @@ header {
       font-size: 1.2em;
 
       &:hover{
+				text-decoration: none !important;
         color: $accent-color;
       }
       &:visited{
-        text-decoration: none;
+        text-decoration: none !important;
         color: $nav-color;
       }
     }
@@ -119,9 +120,10 @@ main {
 article{
 	padding-bottom: 120px; /* Height of the footer element */
 
-	h1,h2,h3,h4{
-    margin-bottom: -.35em;
+	h1{
+    margin-top: .35em;
 	}
+	
 	p{
     width: 95%
 	}
