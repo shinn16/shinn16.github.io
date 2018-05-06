@@ -31,10 +31,9 @@
                         I have been working on various research projects since 2016. Through my research, I have gained valuable experience in networking, wireless sensor networks, virtual machines, and IoT. My fields of interest are IoT, embedded systems, and wireless sensor networks. Below you can explore my past and ongoing research projects.
                     </p>
                     <div >
-                        <input type="radio" name="research" id="ongoing" checked="checked"><label for="ongoing" id="ongoingLabel">Ongoing Research</label>
-                        <input type="radio" name="research" id="completed"><label for="completed" id="completedLabel">Completed Research</label>
-
-                        <div id="ongoingResearch">
+                      <label onclick="openTab('ongoingResearch')">Current Research</label>
+                      <label onclick="openTab('completedResearch')">Completed Research</label>
+                        <div id="ongoingResearch" class="tab">
                             <ol>
                               <li>
                                   <div>
@@ -55,7 +54,7 @@
                           </ol>
                         </div>
 
-                        <div id="completedResearch">
+                        <div id="completedResearch" style="display: none;" class="tab">
                             <ol>
                               <li>
                                   <div>

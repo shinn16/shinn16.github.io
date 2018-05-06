@@ -25,24 +25,3 @@ ol li div{
     margin-bottom: -1em;
     margin-left: -.2em;
 }
-
-// ### IDs ###
-
-#ongoingResearch,
-#completedResearch,
-#releasedSoftware{
-    display: none;
-}
-
-// selectos on page for research/project type
-input#ongoing:checked ~div#ongoingResearch,
-input#completed:checked ~div#completedResearch,
-input#released:checked ~div#releasedSoftware{
-    display: block;
-}
-
-input#ongoing:checked ~label#ongoingLabel,
-input#completed:checked ~label#completedLabel,
-input#released:checked ~label#releasedLabel{
-    color: $accent-color;
-}
