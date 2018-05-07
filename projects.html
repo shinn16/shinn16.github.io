@@ -1,150 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Patrick Shinn | Projects</title>
-        <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
-        <link rel="icon" type="image/png" sizes="any" href="content/images/PS.png" />
-        <script type="text/javascript" src="/content/javaScript/utils.js"></script>
-    </head>
-    <body>
-        <div id="wrapper">
-             <header>
-               <nav>
-                 <input type="checkbox" id="dropdown">
-                 <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
-                 <a class="headerNav" id="homeButton" href="index.html">{Patrick Shinn}</a>
-                 <ul id="navBar">
-                   <li><a class="headerNav" href="about.html">About</a></li>
-                   <li><a class="headerNav" href="research.html">Research</a></li>
-                   <li><a class="headerNav" href="projects.html" id="currentPage">Projects</a></li>
-                   <li><a class="headerNav" href="contact.html">Contact</a></li>
-                 </ul>
-               </nav>
-                <div id="topBorder" class="clear, borderLine"></div>
-            </header>
-            <main>
-                <article>
-                    <h2 >Projects</h2>
-                    <p >
-                        I have a variety of projects going on at the moment, most of which you can actively track on <a  href="https://github.com/shinn16" target="_blank">GitHub</a>.
-                    </p>
-                    <div >
-                      <label class="tabs" style="color: #20a4f3;" onclick="openTab('releasedSoftware', this)">Released Software</label>
-                      <label class="tabs" onclick="openTab('ongoingProjects', this)">Ongoing Projects</label>
-                      <label class="tabs" onclick="openTab('completedProjects', this)">Completed Projects</label>
 
-                        <div id="releasedSoftware" class="tab">
-                            <ol>
-                                 <li>
-                                    <div>
-                                        <h4 ><a  href="https://github.com/shinn16/IP-Tracker" target="_blank">IP-Tracker</a></h4>
-                                        <table class="badgeTable">
-                                            <tr>
-                                                <td><a target="_blank" href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPLV3-blue.svg"></a></td>
-                                            </tr>
-                                        </table>
-                                        <p >
-                                            The purpose of the software is to check the current IP address of the network it is on and record it. In the event that the address changes, the program will send an email out to inform the server owner of the change. If NextCloud is run on the server, the config file will automatically be updated to allow access from the new address. This software is also capable of tracking local IP addresses, but this has been specialized for Raspberry Pis running Raspian. In order to run this software, the system will need at least python 3.4 installed. You will also need to install git on the system to ensure that the scripts run properly. IP-Tracker was designed in a way that if you have python 3, pip3, and git installed, you should need no additional packages for it to run properly.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Shinn | Projects</title>
+  <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
+  <link rel="icon" type="image/png" sizes="any" href="content/images/PS.png" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!-- my js scripts -->
+  <script type="text/javascript" src="/content/javaScript/utils.js"></script>
+</head>
 
-                        <div id="ongoingProjects" class="tab" style="display: none;">
-                            <ol>
-                                <li>
-                                    <div>
-                                        <h4 ><a  href="https://github.com/shinn16/PersonalInfoCenter" target="_blank">Personal Info Center</a></h4>
-                                        <table class="badgeTable">
-                                            <tr>
-                                                <td><img src="https://travis-ci.org/shinn16/PersonalInfoCenter.png?branch=master"></td>
-                                                <td><a target="_blank" href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPLV3-blue.svg"></a></td>
-                                            </tr>
-                                        </table>
-                                        <p >
-                                            Java implementation of a personal information center via Raspberry Pi. Includes usage of the following APIs
-                                        </p>
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
+<body>
+  <div id="wrapper">
+    <header>
+      <nav>
+        <input type="checkbox" id="dropdown">
+        <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
+        <a class="headerNav" id="homeButton" href="index.html">{Patrick Shinn}</a>
+        <ul id="navBar">
+          <li><a class="headerNav" href="about.html">About</a></li>
+          <li><a class="headerNav" href="research.html">Research</a></li>
+          <li><a class="headerNav" href="projects.html" id="currentPage">Projects</a></li>
+          <li><a href="#myModal" role="button" data-toggle="modal">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="topBorder" class="clear, borderLine"></div>
+    </header>
+    <main>
+      <article>
+        <h1>Projects</h1>
+        <p>
+          I have a variety of projects going on at the moment, most of which you can actively track on <a href="https://github.com/shinn16" target="_blank">GitHub</a>.
+        </p>
+        <div>
+          <label class="tabs" style="color: #20a4f3;" onclick="openTab('releasedSoftware', this)">Released Software</label>
+          <label class="tabs" onclick="openTab('ongoingProjects', this)">Ongoing Projects</label>
+          <label class="tabs" onclick="openTab('completedProjects', this)">Completed Projects</label>
 
-                        <div id="completedProjects" class="tab" style="display: none;">
-                            <h4 >Personal</h4>
-                            <ol>
-                                <li>
-                                    <div>
-                                        <h4 ><a  href="https://github.com/shinn16/Text-Editor" target="_blank">Text Editor</a></h4>
-                                        <p >
-                                          The text editor is just a simple Java project I did for fun to learn how to use Netbeans a little better. I think I have decided to abandon Netbeans after doing so.  It is pretty counter intutive compared to the Intelij IDEA IDE.  All in all I learned a lot from it and made a very simplistic text editor.  It may not do much, but it does edit text. :)
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4 ><a  href="https://github.com/shinn16/Conky" target="_blank">Conky</a></h4>
-                                        <p >
-                                            Conkies are custom system monitors for Linux. You can learn more about them <a  href="http://conky.sourceforge.net/documentation.html" target="_blank">here</a>. I have put together a few for my amusement and simply because I find them useful. In order for them to work, they will need a few edits on a system by system base. I built them to work on my computer, so they are specialized for my particular needs. The files are commented, so they shouldn't be to hard to edit and get working for your needs.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ol>
-                            <h4 >School</h4>
-                            <ol>
-                                <li>
-                                    <div>
-                                        <h4 ><a  target="_blank" href="https://github.com/shinn16/WeatherAndroidForecast">Android Weather App</a></h4>
-                                        <p >
-                                           Weather Android Forecast
-                                        </p>
-                                    </div>
-                                </li>
-                                 <li>
-                                    <div>
-                                        <h4 ><a  target="_blank" href="https://github.com/shinn16/Chess">Chess</a></h4>
-                                        <p >
-                                           CS 210 Chess game Final project for CS 210. Feel free to use it for ideas of you own, this project has an open source license.
-                                            This project was created using the JavaFX graphics library
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4 ><a  target="_blank" href="https://github.com/ChillyCider/connect5">Connect 5</a></h4>
-                                        <p >
-                                            Second project for CS 210.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4 ><a  target="_blank" href="https://github.com/shinn16/MazeSolver">Maze Solver</a></h4>
-                                        <p >
-                                            CS 210 Mase Solver Project
-                                        </p>
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </article>
-            </main>
-            <footer>
-                <div class="borderLine"></div>
-                <table>
+          <div id="releasedSoftware" class="tab">
+            <ol>
+              <li>
+                <div>
+                  <h4><a  href="https://github.com/shinn16/IP-Tracker" target="_blank">IP-Tracker</a></h4>
+                  <table class="badgeTable">
                     <tr>
-                        <td><a target="_blank" href="https://github.com/shinn16"><img src="content/images/GitHub.png" alt="GitHub"></a></td>
-                        <td><a href="mailto:shinn16@marshall.edu"><img src="content/images/email.png"></a></td>
-                        <td><a href="https://github.com/shinn16.atom"><img src="content/images/RSS.png"></a></td>
+                      <td><a target="_blank" href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPLV3-blue.svg"></a></td>
                     </tr>
+                  </table>
+                  <p>
+                    The purpose of the software is to check the current IP address of the network it is on and record it. In the event that the address changes, the program will send an email out to inform the server owner of the change. If NextCloud is run on the server,
+                    the config file will automatically be updated to allow access from the new address. This software is also capable of tracking local IP addresses, but this has been specialized for Raspberry Pis running Raspian. In order to run this
+                    software, the system will need at least python 3.4 installed. You will also need to install git on the system to ensure that the scripts run properly. IP-Tracker was designed in a way that if you have python 3, pip3, and git installed,
+                    you should need no additional packages for it to run properly.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div id="ongoingProjects" class="tab" style="display: none;">
+            <ol>
+              <li>
+                <div>
+                  <h4><a  href="https://github.com/shinn16/PersonalInfoCenter" target="_blank">Personal Info Center</a></h4>
+                  <table class="badgeTable">
                     <tr>
-                        <td colspan="3">Patrick Shinn <script type="text/javascript"> setYear();</script></td>
+                      <td><img src="https://travis-ci.org/shinn16/PersonalInfoCenter.png?branch=master"></td>
+                      <td><a target="_blank" href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPLV3-blue.svg"></a></td>
                     </tr>
-                </table>
-            </footer>
+                  </table>
+                  <p>
+                    Java implementation of a personal information center via Raspberry Pi. Includes usage of the following APIs:
+                  </p>
+                  <ul>
+                    <li>
+                      Google Maps
+                    </li>
+                  </ul>
+                  <p>
+                    At this time, this project is haulted unitl I can get some free time to continue working on it.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div id="completedProjects" class="tab" style="display: none;">
+            <h4>Personal</h4>
+            <ol>
+              <li>
+                <div>
+                  <h4><a  href="https://github.com/shinn16/Text-Editor" target="_blank">Text Editor</a></h4>
+                  <p>
+                    The text editor is just a simple Java project I did for fun to learn how to use Netbeans a little better. I think I have decided to abandon Netbeans after doing so. It is pretty counter intutive compared to the Intelij IDEA IDE. All in all I learned a
+                    lot from it and made a very simplistic text editor. It may not do much, but it does edit text. :)
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4><a  href="https://github.com/shinn16/Conky" target="_blank">Conky</a></h4>
+                  <p>
+                    Conkies are custom system monitors for Linux. You can learn more about them <a href="http://conky.sourceforge.net/documentation.html" target="_blank">here</a>. I have put together a few for my amusement and simply because I find them
+                    useful. In order for them to work, they will need a few edits on a system by system base. I built them to work on my computer, so they are specialized for my particular needs. The files are commented, so they shouldn't be to hard to
+                    edit and get working for your needs.
+                  </p>
+                </div>
+              </li>
+            </ol>
+            <h4>School</h4>
+            <ol>
+              <li>
+                <div>
+                  <h4><a  target="_blank" href="https://github.com/shinn16/WeatherAndroidForecast">Android Weather App</a></h4>
+                  <p>
+                    Weather Android Forecast
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4><a  target="_blank" href="https://github.com/shinn16/Chess">Chess</a></h4>
+                  <p>
+                    CS 210 Chess game Final project for CS 210. Feel free to use it for ideas of you own, this project has an open source license. This project was created using the JavaFX graphics library
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4><a  target="_blank" href="https://github.com/ChillyCider/connect5">Connect 5</a></h4>
+                  <p>
+                    Second project for CS 210.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h4><a  target="_blank" href="https://github.com/shinn16/MazeSolver">Maze Solver</a></h4>
+                  <p>
+                    CS 210 Mase Solver Project
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
         </div>
-    </body>
+      </article>
+    </main>
+    <footer>
+      <div class="borderLine"></div>
+      <table>
+        <tr>
+          <td><a target="_blank" href="https://github.com/shinn16"><img src="content/images/GitHub.png" alt="GitHub"></a></td>
+          <td><a href="mailto:shinn16@marshall.edu"><img src="content/images/email.png"></a></td>
+          <td><a href="https://github.com/shinn16.atom"><img src="content/images/RSS.png"></a></td>
+        </tr>
+        <tr>
+          <td colspan="3">Patrick Shinn
+            <script type="text/javascript">
+              setYear();
+            </script>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </div>
+</body>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Contact</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="float-left">
+          To inquire about my projects, please use the email provided, for all other inqueries please follow the link below the email.
+        </div>
+        <div class="float-right">
+          <table id="contact_table">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  <img src="content/images/mail.png" />
+                </td>
+                <td class="align-middle">
+                  <a href="mailto:shinn16@marshall.edu">shinn16@marshall.edu</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle">
+                  <img src="content/images/form.png" />
+                </td>
+                <td class="align-middle">
+                  <a target="_blank" href="https://goo.gl/forms/elzrgYJDBV7bC1K32">Contact Form</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>
+          &copy Patrick Shinn
+          <script type="text/javascript">
+            setYear()
+          </script>
+        </p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 </html>

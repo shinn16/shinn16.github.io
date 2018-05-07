@@ -1,91 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Patrick Shinn | Research</title>
-        <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
-        <link rel="icon" type="image/png" sizes="any" href="content/images/PS.png" />
-        <script type="text/javascript" src="/content/javaScript/utils.js"></script>
-    </head>
-    <body>
-        <div id="wrapper">
-             <header>
-               <nav>
-                 <input type="checkbox" id="dropdown">
-                 <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
-                 <a  id="homeButton" href="index.html">{Patrick Shinn}</a>
-                 <ul id="navBar">
-                     <li><a  href="about.html">About</a></li>
-                     <li><a  href="research.html" id="currentPage">Research</a></li>
-                     <li><a  href="projects.html">Projects</a></li>
-                     <li><a  href="contact.html">Contact</a></li>
-                 </ul>
-               </nav>
-                <div id="topBorder" class="clear, borderLine"></div>
-            </header>
-            <main>
-                <article>
-                    <h1 >Research</h1>
-                    <p >
-                        I have been working on various research projects since 2016. Through my research, I have gained valuable experience in networking, wireless sensor networks, virtual machines, and IoT. My fields of interest are IoT, embedded systems, and wireless sensor networks. Below you can explore my past and ongoing research projects.
-                    </p>
-                    <div >
-                      <label class="tabs" style="color: #20a4f3;" onclick="openTab('ongoingResearch', this)">Current Research</label>
-                      <label class="tabs" onclick="openTab('completedResearch', this)">Completed Research</label>
-                        <div id="ongoingResearch" class="tab">
-                            <ol>
-                              <li>
-                                  <div>
-                                      <h3 >Flood Detection Using An Arduino Based Wireless Sensor Network, funded by <a  target="_blank" href="http://www.wvspacegrant.org/about/wvsgc/">NASA West Virginia Space Grant Consortium Undergraduate Fellowship</a></h3>
-                                      <p >
-                                          <b>Abstract: </b>Flash flooding is a very sudden and destructive natural disaster. Per the National Oceanic and Atmospheric Administration (NOAA), in the United States the national 30-year average for flood deaths is 127 a year. In this paper, I will propose improvements that build upon a system that enabled the creation of a cheap and effective wireless sensor platforms that provide real time data on the current state of a body of a rising body of water and serves as an early warning system for flooding. Through these improvements, the longevity of the system and the effective range of the network will be drastically improved, resulting in sensor network that is completely autonomous and sustainable.
-                                      </p>
-                                  </div>
-                              </li>
-                              <li>
-                                  <div>
-                                      <h3 ><a  target="_blank" href="https://shinn16.github.io/Load-Testing/">Load Testing in a Virtual Environment VS a Physical Environment</a>, funded by <a  target="_blank" href="http://www.marshall.edu/sure/">Marshall SURE</a></h3>
-                                      <p >
-                                          <b>Abstract: </b>Load testing is one of the means for evaluating the performance of Ultra Large Scale Systems (ULSS). At the end of  a load test, performance analysts must analyze thousands of performance counters from hundreds of machines under test. These performance counters are measures of run-time system properties such as CPU utilization, Disk I/O, memory consumption, and network traffic. Analysts observe counters to find out if the system is meeting its Service Level Agreements (SLAs). Typically, to save time and money, load tests are conducted in a virtualized environment prior to release of the enterprise software. Nevertheless, to date there do not exist any research to study if there exists any overhead in the use of virtual machines for load testing in comparison to physical machines. In our work, we perform a study on two open-source benchmarks systems DS2 and Rubis, where load test are conducted on both virtual and physical environments. We compare the results of load tests conducted using both the environment, identify any discrepancy (if exists). Further, we explore the rational of the observed discrepancies.
-                                      </p>
-                                  </div>
-                              </li>
-                          </ol>
-                        </div>
 
-                        <div id="completedResearch" style="display: none;" class="tab">
-                            <ol>
-                              <li>
-                                  <div>
-                                      <h3 ><a href="http://patrick-shinn.com/Flood-Detection/"  target="_blank">Flood Detection and Avoidance using a Wireless Sensor Network</a>, funded by <a  target="_blank" href="http://www.wvspacegrant.org/about/wvsgc/">NASA West Virginia Space Grant Consortium Undergraduate Fellowship</a></h3>
-                                      <p >
-                                          <b>Abstract: </b>Flash flooding is a very sudden, destructive natural disaster. Per the National Oceanic and
-                                          Atmospheric Administration (NOAA), in the United States the national 30-year average for flood
-                                          deaths is 127 a year. In this paper, I will propose a system of cheap and effective wireless sensor
-                                          platforms that will provide real time data on the current state of a rising body of water
-                                          and serve as an early warning system for flooding that will help save lives and property.
-                                      </p>
-                                  </div>
-                              </li>
-                            </ol>
-                        </div>
-                    </div>
-                </article>
-            </main>
-            <footer>
-                <div class="borderLine"></div>
-                <table >
-                    <tr>
-                        <td><a target="_blank" href="https://github.com/shinn16"><img src="content/images/GitHub.png" alt="GitHub"></a></td>
-                        <td><a href="mailto:shinn16@marshall.edu"><img src="content/images/email.png"></a></td>
-                        <td><a href="https://github.com/shinn16.atom"><img src="content/images/RSS.png"></a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Patrick Shinn <script type="text/javascript"> setYear();</script></td>
-                    </tr>
-                </table>
-            </footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Shinn | Research</title>
+  <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
+  <link rel="icon" type="image/png" sizes="any" href="content/images/PS.png" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!-- my js scripts -->
+  <script type="text/javascript" src="/content/javaScript/utils.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <nav>
+        <input type="checkbox" id="dropdown">
+        <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
+        <a id="homeButton" href="index.html">{Patrick Shinn}</a>
+        <ul id="navBar">
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html" id="currentPage">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#myModal" role="button" data-toggle="modal">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="topBorder" class="clear, borderLine"></div>
+    </header>
+    <main>
+      <article>
+        <h1>Research</h1>
+        <p>
+          I have been working on various research projects since 2016. Through my research, I have gained valuable experience in networking, wireless sensor networks, virtual machines, and IoT. My fields of interest are IoT, embedded systems, and wireless sensor
+          networks. Below you can explore my past and ongoing research projects.
+        </p>
+        <div>
+          <label class="tabs" style="color: #20a4f3;" onclick="openTab('ongoingResearch', this)">Current Research</label>
+          <label class="tabs" onclick="openTab('completedResearch', this)">Completed Research</label>
+          <div id="ongoingResearch" class="tab">
+            <ol>
+              <li>
+                <div>
+                  <h3>Flood Detection Using An Arduino Based Wireless Sensor Network, funded by <a  target="_blank" href="http://www.wvspacegrant.org/about/wvsgc/">NASA West Virginia Space Grant Consortium Undergraduate Fellowship</a></h3>
+                  <p>
+                    <b>Abstract: </b>Flash flooding is a very sudden and destructive natural disaster. Per the National Oceanic and Atmospheric Administration (NOAA), in the United States the national 30-year average for flood deaths is 127 a year. In
+                    this paper, I will propose improvements that build upon a system that enabled the creation of a cheap and effective wireless sensor platforms that provide real time data on the current state of a body of a rising body of water and
+                    serves as an early warning system for flooding. Through these improvements, the longevity of the system and the effective range of the network will be drastically improved, resulting in sensor network that is completely autonomous
+                    and sustainable.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3><a  target="_blank" href="https://shinn16.github.io/Load-Testing/">Load Testing in a Virtual Environment VS a Physical Environment</a>, funded by <a  target="_blank" href="http://www.marshall.edu/sure/">Marshall SURE</a></h3>
+                  <p>
+                    <b>Abstract: </b>Load testing is one of the means for evaluating the performance of Ultra Large Scale Systems (ULSS). At the end of a load test, performance analysts must analyze thousands of performance counters from hundreds of machines
+                    under test. These performance counters are measures of run-time system properties such as CPU utilization, Disk I/O, memory consumption, and network traffic. Analysts observe counters to find out if the system is meeting its Service
+                    Level Agreements (SLAs). Typically, to save time and money, load tests are conducted in a virtualized environment prior to release of the enterprise software. Nevertheless, to date there do not exist any research to study if there
+                    exists any overhead in the use of virtual machines for load testing in comparison to physical machines. In our work, we perform a study on two open-source benchmarks systems DS2 and Rubis, where load test are conducted on both virtual
+                    and physical environments. We compare the results of load tests conducted using both the environment, identify any discrepancy (if exists). Further, we explore the rational of the observed discrepancies.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div id="completedResearch" style="display: none;" class="tab">
+            <ol>
+              <li>
+                <div>
+                  <h3><a href="http://patrick-shinn.com/Flood-Detection/"  target="_blank">Flood Detection and Avoidance using a Wireless Sensor Network</a>, funded by <a  target="_blank" href="http://www.wvspacegrant.org/about/wvsgc/">NASA West Virginia Space Grant Consortium Undergraduate Fellowship</a></h3>
+                  <p>
+                    <b>Abstract: </b>Flash flooding is a very sudden, destructive natural disaster. Per the National Oceanic and Atmospheric Administration (NOAA), in the United States the national 30-year average for flood deaths is 127 a year. In this
+                    paper, I will propose a system of cheap and effective wireless sensor platforms that will provide real time data on the current state of a rising body of water and serve as an early warning system for flooding that will help save lives
+                    and property.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
         </div>
-    </body>
+      </article>
+    </main>
+    <footer>
+      <div class="borderLine"></div>
+      <table>
+        <tr>
+          <td><a target="_blank" href="https://github.com/shinn16"><img src="content/images/GitHub.png" alt="GitHub"></a></td>
+          <td><a href="mailto:shinn16@marshall.edu"><img src="content/images/email.png"></a></td>
+          <td><a href="https://github.com/shinn16.atom"><img src="content/images/RSS.png"></a></td>
+        </tr>
+        <tr>
+          <td colspan="3">Patrick Shinn
+            <script type="text/javascript">
+              setYear();
+            </script>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </div>
+</body>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Contact</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="float-left">
+          To inquire about my projects, please use the email provided, for all other inqueries please follow the link below the email.
+        </div>
+        <div class="float-right">
+          <table id="contact_table">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  <img src="content/images/mail.png" />
+                </td>
+                <td class="align-middle">
+                  <a href="mailto:shinn16@marshall.edu">shinn16@marshall.edu</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle">
+                  <img src="content/images/form.png" />
+                </td>
+                <td class="align-middle">
+                  <a target="_blank" href="https://goo.gl/forms/elzrgYJDBV7bC1K32">Contact Form</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>
+          &copy Patrick Shinn
+          <script type="text/javascript">
+            setYear()
+          </script>
+        </p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </html>

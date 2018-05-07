@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Patrick Shinn | Contact</title>
-        <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
-        <link rel="icon" type="image/png" sizes="any" href="content/images/PS.png" />
-        <script type="text/javascript" src="/content/javaScript/utils.js"></script>
-    </head>
-    <body>
-        <div id="wrapper">
-             <header>
-               <nav>
-                 <input type="checkbox" id="dropdown">
-                 <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
-                 <a  id="homeButton" href="index.html">{Patrick Shinn}</a>
-                 <ul id="navBar">
-                     <li><a  href="about.html">About</a></li>
-                     <li><a  href="research.html">Research</a></li>
-                     <li><a  href="projects.html">Projects</a></li>
-                     <li><a  href="contact.html" id="currentPage">Contact</a></li>
-                 </ul>
-               </nav>
-                <div id="topBorder" class="clear, borderLine"></div>
-            </header>
-            <main>
-                <article>
-                    <h1 >Contact</h1>
-                    <p >
-                        To get in touch with me about my resume or quesitons in general, please visit the email adress below.
-                    </p>
-                  <table id="contact_table">
-                    <tbody>
-                      <tr>
-                        <td>
-                          <img src="content/images/mail.png" />
-                        </td>
-                        <td>
-                          <a href="mailto:shinn16@marshall.edu">shinn16@marshall.edu</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </article>
-            </main>
-            <footer>
-                <div class="borderLine"></div>
-                <table >
-                    <tr>
-                        <td><a target="_blank" href="https://github.com/shinn16"><img src="content/images/GitHub.png" alt="GitHub"></a></td>
-                        <td><a href="mailto:shinn16@marshall.edu"><img src="content/images/email.png"></a></td>
-                        <td><a href="https://github.com/shinn16.atom"><img src="content/images/RSS.png"></a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Patrick Shinn <script type="text/javascript"> setYear();</script></td>
-                    </tr>
-                </table>
-            </footer>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Shinn | Contact</title>
+  <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
+  <link rel="icon" type="image/png" sizes="any" href="content/images/PS.png" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!-- my js scripts -->
+  <script type="text/javascript" src="/content/javaScript/utils.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <nav>
+        <input type="checkbox" id="dropdown">
+        <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
+        <a id="homeButton" href="index.html">{Patrick Shinn}</a>
+        <ul id="navBar">
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" id="currentPage">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="topBorder" class="clear, borderLine"></div>
+    </header>
+    <main>
+      <article>
+        <h1>Contact Form</h1>
+        <div id="gooleForm" class="form-control">
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfLRcWZWfa86WG6q8qO9Ep7_Aw9ls1Q1ZUh9z3w6Ctwp90M_A/viewform?usp=sf_link">
+            <div class="form-group">
+              <input type="text" name="entry.2005620554" value="" class="form-control name" id="entry_2005620554" dir="auto" aria-label="Name  " aria-required="true" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input type="text" name="entry.1045781291" value="" class="form-control email" id="entry_1045781291" dir="auto" aria-label="Email  " aria-required="true" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <textarea type="textarea" name="entry.1166974658" value="" class="form-control" id="entry_1166974658" dir="auto" aria-label="Reason for Inquiry" aria-required="true" placeholder="Reason for Inquiry">
+              </textarea>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" id="submit" class="btn btn-default" name="submit" value="Submit">
+            </div>
+
+          </form>
         </div>
-    </body>
+
+      </article>
+    </main>
+    <footer>
+      <div class="borderLine"></div>
+      <table>
+        <tr>
+          <td><a target="_blank" href="https://github.com/shinn16"><img src="content/images/GitHub.png" alt="GitHub"></a></td>
+          <td><a href="mailto:shinn16@marshall.edu"><img src="content/images/email.png"></a></td>
+          <td><a href="https://github.com/shinn16.atom"><img src="content/images/RSS.png"></a></td>
+        </tr>
+        <tr>
+          <td colspan="3">Patrick Shinn
+            <script type="text/javascript">
+              setYear();
+            </script>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </div>
+</body>
+
 </html>

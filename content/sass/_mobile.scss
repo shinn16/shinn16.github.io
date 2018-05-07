@@ -68,6 +68,7 @@
 
   #homeButton{
     font-size: 3em;
+    top: -.15em;
   }
 
   #dropdownImg{
@@ -130,5 +131,9 @@
     img{
       width: 4em;
     }
+  }
+  // modals
+  .modal-dialog{
+    width: 90% !important;
   }
 }

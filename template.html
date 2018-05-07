@@ -1,44 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Patrick Shinn | Home</title>
-        <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
-        <link rel="icon" type="image/png" sizes="any" href="content/images/PS.png" />
-        <script type="text/javascript" src="/content/javaScript/utils.js"></script>
-    </head>
-    <body>
-        <div id="wrapper">
-            <header>
-              <nav>
-                <input type="checkbox" id="dropdown">
-                <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
-                <a id="homeButton" href="index.html">{Patrick Shinn}</a>
-                <ul id="navBar">
-                    <li><a  href="about.html">About</a></li>
-                    <li><a  href="research.html">Research</a></li>
-                    <li><a  href="projects.html">Projects</a></li>
-                    <li><a  href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
-                <div id="topBorder" class="clear, borderLine"></div>
-            </header>
-            <main>
-            </main>
-            <footer>
-                <div class="borderLine"></div>
-                <table>
-                    <tr>
-                        <td><a target="_blank" href="https://github.com/shinn16"><img src="content/images/GitHub.png" alt="GitHub"></a></td>
-                        <td><a href="mailto:shinn16@marshall.edu"><img src="content/images/email.png"></a></td>
-                        <td><a href="https://github.com/shinn16.atom"><img src="content/images/RSS.png"></a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Patrick Shinn <script type="text/javascript"> setYear();</script></td>
-                    </tr>
-                </table>
-            </footer>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Shinn | Home</title>
+  <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
+  <link rel="icon" type="image/png" sizes="any" href="content/images/PS.png" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!-- my js scripts -->
+  <script type="text/javascript" src="/content/javaScript/utils.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <nav>
+        <input type="checkbox" id="dropdown">
+        <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
+        <a id="homeButton" href="index.html">{Patrick Shinn}</a>
+        <ul id="navBar">
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#myModal" role="button" data-toggle="modal">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="topBorder" class="clear, borderLine"></div>
+    </header>
+    <main>
+    </main>
+    <footer>
+      <div class="borderLine"></div>
+      <table>
+        <tr>
+          <td><a target="_blank" href="https://github.com/shinn16"><img src="content/images/GitHub.png" alt="GitHub"></a></td>
+          <td><a href="mailto:shinn16@marshall.edu"><img src="content/images/email.png"></a></td>
+          <td><a href="https://github.com/shinn16.atom"><img src="content/images/RSS.png"></a></td>
+        </tr>
+        <tr>
+          <td colspan="3">Patrick Shinn
+            <script type="text/javascript">
+              setYear();
+            </script>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </div>
+</body>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Contact</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="float-left">
+          To inquire about my projects, please use the email provided, for all other inqueries please follow the link below the email.
         </div>
-    </body>
+        <div class="float-right">
+          <table id="contact_table">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  <img src="content/images/mail.png" />
+                </td>
+                <td class="align-middle">
+                  <a href="mailto:shinn16@marshall.edu">shinn16@marshall.edu</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle">
+                  <img src="content/images/form.png" />
+                </td>
+                <td class="align-middle">
+                  <a target="_blank" href="https://goo.gl/forms/elzrgYJDBV7bC1K32">Contact Form</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>
+          &copy Patrick Shinn
+          <script type="text/javascript">
+            setYear()
+          </script>
+        </p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </html>
