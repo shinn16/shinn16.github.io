@@ -1,0 +1,22 @@
+@import "_varibles";
+
+// buttons
+.btn-default{
+  background: $accent-color !important;
+  color: white !important;
+  @include allTransition(color 1s);
+
+  &:hover{
+    background: darken( $accent-color, 10% ) !important;
+  }
+}
+
+
+// modals
+.modal-dialog{
+  vertical-align: middle !important;
+}
+.modal-footer{
+  background: $main-color !important;
+  color: white !important;
+}

@@ -1,59 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Patrick Shinn | Home</title>
-        <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
-        <link rel="icon" type="image/png" sizes="any" href="content/images/PS.png" />
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-        <!-- my js scripts -->
-        <script type="text/javascript" src="/content/javaScript/utils.js"></script>
-    </head>
-    <body id="home">
-         <div id="wrapper">
-             <header>
-                    <input type="checkbox" id="dropdown">
-                    <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
-                    <a  id="homeButton" href="index.html">{Patrick Shinn}</a>
-                    <ul id="navBar">
-                        <li><a  href="about.html">About</a></li>
-                        <li><a  href="research.html">Research</a></li>
-                        <li><a  href="projects.html">Projects</a></li>
-                        <li><a  href="contact.html">Contact</a></li>
-                    </ul>
-                    <div id="topBorder" class="clear, borderLine"></div>
-                </header>
-            <main>
-                <img id="me" src=content/images/me.jpg>
-                <div id="greeting">
-                  <h1>Hello There,</h1>
-                  <p>
-                      My name is Patrick Shinn, I am currently enrolled at Marshall Univeristy and working on my BS in computer science. I am a programmer, and avid photographer, and a strong advocate for Linux.
-                      To learn more about me, explore the site!
-                  </p>
-                </div>
-            </main>
-            <footer>
-                <div class="borderLine"></div>
-                <table >
-                    <tr>
-                        <td><a target="_blank" href="https://github.com/shinn16"><img src="content/images/GitHub.png" alt="GitHub"></a></td>
-                        <td><a href="mailto:shinn16@marshall.edu"><img src="content/images/email.png"></a></td>
-                        <td><a href="https://github.com/shinn16.atom"><img src="content/images/RSS.png"></a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Patrick Shinn <script type="text/javascript"> setYear();</script></td>
-                    </tr>
-                </table>
-            </footer>
-        </div>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Shinn | Home</title>
+  <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
+  <link rel="icon" type="image/png" sizes="any" href="content/images/PS.png" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!-- my js scripts -->
+  <script type="text/javascript" src="/content/javaScript/utils.js"></script>
+</head>
+
+<body id="home">
+  <div id="wrapper">
+    <header>
+      <input type="checkbox" id="dropdown">
+      <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
+      <a id="homeButton" href="index.html">{Patrick Shinn}</a>
+      <ul id="navBar">
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#myModal" role="button" data-toggle="modal">Contact</a></li>
+      </ul>
+      <div id="topBorder" class="clear, borderLine"></div>
+    </header>
+    <main>
+      <img id="me" src=content/images/me.jpg>
+      <div id="greeting">
+        <h1>Hello There,</h1>
+        <p>
+          My name is Patrick Shinn, I am currently enrolled at Marshall Univeristy and working on my BS in computer science. I am a programmer, an avid photographer, and a strong advocate for Linux. To learn more about me, explore the site!
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="borderLine"></div>
+      <table>
+        <tr>
+          <td><a target="_blank" href="https://github.com/shinn16"><img src="content/images/GitHub.png" alt="GitHub"></a></td>
+          <td><a href="mailto:shinn16@marshall.edu"><img src="content/images/email.png"></a></td>
+          <td><a href="https://github.com/shinn16.atom"><img src="content/images/RSS.png"></a></td>
+        </tr>
+        <tr>
+          <td colspan="3">Patrick Shinn
+            <script type="text/javascript">
+              setYear();
+            </script>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </div>
+</body>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Contact</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 </html>
