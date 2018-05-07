@@ -14,9 +14,14 @@
 
 // modals
 .modal-dialog{
-  vertical-align: middle !important;
+  position: absolute;
+  top: 5em !important;
+  right: auto !important;
 }
 .modal-footer{
   background: $main-color !important;
   color: white !important;
+  p{
+    margin: auto !important;
+  }
 }
