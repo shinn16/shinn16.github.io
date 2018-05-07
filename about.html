@@ -30,7 +30,7 @@
           <li><a href="about.html" id="currentPage">About</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#myModal" role="button" data-toggle="modal">Contact</a></li>
         </ul>
       </nav>
       <div id="topBorder" class="clear, borderLine"></div>
@@ -136,5 +136,54 @@
     </footer>
   </div>
 </body>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Contact</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="float-left">
+          To inquire about my projects, please use the email provided, for all other inqueries please follow the link below the email.
+        </div>
+        <div class="float-right">
+          <table id="contact_table">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  <img src="content/images/mail.png" />
+                </td>
+                <td class="align-middle">
+                  <a href="mailto:shinn16@marshall.edu">shinn16@marshall.edu</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle">
+                  <img src="content/images/form.png" />
+                </td>
+                <td class="align-middle">
+                  <a target="_blank" href="https://goo.gl/forms/elzrgYJDBV7bC1K32">Contact Form</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>
+          &copy Patrick Shinn
+          <script type="text/javascript">
+            setYear()
+          </script>
+        </p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>
