@@ -26,12 +26,12 @@
 
     ul {
       background: $main-color;
-      border-bottom-left-radius: 20%;
       visibility: hidden;
       float: none;
       position: absolute;
       top: 2.8em;
       right: 0;
+      width: 100%;
       opacity: 0;
       max-height: 0;
       @include allTransition(all 1s linear);
@@ -116,13 +116,18 @@
     }
   }
   //******* Main *******
-  main .tabs {
-    font-size: 1em;
-    display: block;
-    width: 40%;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 0.35em;
+  main {
+    width: 95%;
+    text-align: justify;
+
+    .tabs {
+      font-size: 1em;
+      display: block;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 0.35em;
+    }
   }
   //****** Footer ******
   #footerNav {
