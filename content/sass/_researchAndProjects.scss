@@ -3,11 +3,13 @@
 
 main .tabs{
     font-size: 1.2em;
-    margin-right: 2%;
+    margin-right: .2em;
     padding: .4em;
     background: $label-color;
     border-radius: .3em;
     color: white;
+    width: 11em;
+    text-align: center;
 
     &:hover{
       box-shadow:  2px 2px 12px black;
