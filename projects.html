@@ -48,9 +48,9 @@
         <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
         <a class="headerNav" id="homeButton" href="index.html">{Patrick Shinn}</a>
         <ul id="navBar">
-          <li><a class="headerNav" href="about.html">About</a></li>
-          <li><a class="headerNav" href="research.html">Research</a></li>
-          <li><a class="headerNav" href="projects.html" id="currentPage">Projects</a></li>
+          <li><a data-toggle="tooltip" title="Learn about me!" href="about.html">About</a></li>
+          <li><a data-toggle="tooltip" title="Research, past and present" href="research.html">Research</a></li>
+          <li><a data-toggle="tooltip" title="Personal, school, and professional projects" href="projects.html" id="currentPage">Projects</a></li>
           <li><a href="#myModal" role="button" data-toggle="modal">Contact</a></li>
         </ul>
       </nav>
@@ -66,7 +66,7 @@
           <label class="tabs" style="color: #20a4f3;" onclick="openTab('releasedSoftware', this)">Released Software</label>
           <label class="tabs" onclick="openTab('ongoingProjects', this)">Ongoing Projects</label>
           <label class="tabs" onclick="openTab('completedProjects', this)">Completed Projects</label>
-
+          <hr />
           <div id="releasedSoftware" class="tab">
             <ol>
               <li>
