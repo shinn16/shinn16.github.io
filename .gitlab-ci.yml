@@ -7,7 +7,7 @@ variables:
   JEKYLL_ENV: production
 
 before_script:
-- bundle install
+- gem install jekyll
 
 test:
   stage: test
