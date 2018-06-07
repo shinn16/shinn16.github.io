@@ -1,0 +1,145 @@
+@import "utils/_utils"; // utilities
+// tablets
+@media screen and (max-width: 1900px) {
+  #homeButton {
+    top: 0.05em;
+  }
+
+  #greeting {
+    margin-top: 5em;
+    width: 40%;
+  }
+
+  #me {
+    margin-top: 6em;
+  }
+}
+// Phones
+@media screen and (max-width: 800px) {
+  /****** body *****/
+  body {
+    background-size: 80% auto, cover;
+  }
+  /****** Nav ******/
+  header {
+    height: 4em;
+
+    ul {
+      background: $main-color;
+      visibility: hidden;
+      float: none;
+      position: absolute;
+      top: 2.8em;
+      right: 0;
+      width: 100%;
+      opacity: 0;
+      max-height: 0;
+      @include allTransition(all 1s linear);
+    }
+
+    li {
+      text-align: center;
+      display: block;
+      padding: 0;
+      margin-left: -.8em;
+      margin-right: 0.8em;
+    }
+  }
+
+  input#dropdown:checked ~ul#navBar {
+    visibility: visible;
+    opacity: 1;
+    max-height: 300px;
+  }
+
+  input#dropdown:checked ~#dropdownImg {
+    @include allFilter(grayscale(100%));
+  }
+  /*Classes*/
+  /* IDS */
+  #float-left,
+  #float-right {
+    float: none !important;
+    width: 100%;
+  }
+
+  #topBorder {
+    position: absolute;
+    top: 4em;
+    left: 0;
+  }
+
+  #homeButton {
+    font-size: 3em;
+    top: -.15em;
+  }
+
+  #dropdownImg {
+    margin-top: 0.5em;
+    width: 2.7em;
+    margin-right: 1em;
+    display: block;
+    float: right;
+    @include allFilter(grayscale(0%));
+    @include allTransition(all 1s ease);
+
+    img {
+      width: 100%;
+    }
+  }
+  //****** Home ******/
+  #me {
+    margin-top: 10%;
+    margin-left: 28%;
+    width: 40%;
+    float: none;
+  }
+
+  #greeting {
+    float: none;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 1em;
+
+    h1 {
+      width: 100%;
+      font-size: 2em;
+      text-align: center;
+      margin: auto;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: auto;
+      text-align: center;
+      width: 80%;
+    }
+  }
+  //******* Main *******
+  main {
+    width: 95%;
+    text-align: justify;
+
+    .tabs {
+      font-size: 1em;
+      display: block;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 0.35em;
+    }
+  }
+  //****** Footer ******
+  #footerNav {
+    margin: auto;
+    width: 40%;
+
+    img {
+      width: 4em;
+    }
+  }
+  // modals
+  .modal-dialog {
+    width: 90% !important;
+  }
+}
