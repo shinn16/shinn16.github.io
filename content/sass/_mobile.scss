@@ -56,6 +56,12 @@
     @include allFilter(grayscale(100%));
   }
   /*Classes*/
+  .flex-container{
+    .card{
+      width: 100%;
+    }
+  }
+
   /* IDS */
   #float-left,
   #float-right {
