@@ -144,6 +144,18 @@ article {
 .clear {
 	clear: both;
 }
+
+.flex-container{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+	.card{
+		margin-top: 1em;
+	}
+}
+
+
 // ##################### Footer ##############################
 footer {
 	/*For absolute footer, do not edit*/

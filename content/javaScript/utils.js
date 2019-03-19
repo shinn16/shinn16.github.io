@@ -18,7 +18,7 @@ function openTab(tabName, label) {
         x[i].style.color = "white";
     }
     document.getElementById(tabName).style.display = "block";
-    label.style.color = "#20a4f3";
+    label.style.color = "lightcyan";
 }
 
 // basic js search function for a table
