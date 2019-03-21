@@ -9,11 +9,14 @@
     background-position: center;
 }
 
+#greeting_content{
+  margin-top: 12.5em;
+  margin-left: 20em;
+}
+
 #greeting{
 	float: left;
-	margin-top: 10em;
-	margin-left: 2em;
-	width: 30%;
+	width: 45%;
   color: white;
 
   h1{
@@ -29,8 +32,6 @@
     float: left;
     width: 18em;
     border: 3px solid $accent-color;
-		margin-top: 10%;
-		margin-left: 10%;
-    margin-right: 2%;
     border-radius: 1em;
+    margin-right: 2em;
 }

@@ -16,9 +16,10 @@ function openTab(tabName, label) {
     var x = document.getElementsByClassName("tabs");
     for (i = 0; i < x.length; i++) {
         x[i].style.color = "white";
+        x[i].style.background = "#258be4";
     }
     document.getElementById(tabName).style.display = "block";
-    label.style.color = "lightcyan";
+    label.style.background = "#0D599A";
 }
 
 // basic js search function for a table

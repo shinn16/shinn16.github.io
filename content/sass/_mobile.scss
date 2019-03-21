@@ -5,14 +5,14 @@
     top: 0.05em;
   }
 
-  #greeting {
-    margin-top: 5em;
-    width: 40%;
+  #greeting_content{
+    margin-left: 5em;
   }
 
-  #me {
-    margin-top: 6em;
+  #greeting {
+    width: 50%;
   }
+
 }
 // Phones
 @media screen and (max-width: 800px) {
@@ -94,11 +94,20 @@
     }
   }
   //****** Home ******/
+  #greeting_content{
+    margin-top: 0;
+  }
+
   #me {
     margin-top: 10%;
     margin-left: 28%;
+    margin-bottom: 1%;
     width: 40%;
     float: none;
+  }
+
+  #greeting_content{
+    margin-left: 2.5em;
   }
 
   #greeting {
