@@ -61,25 +61,46 @@
     <main>
       <article>
         <h1>Contact Form</h1>
-        <div id="gooleForm" class="form-control">
-          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfLRcWZWfa86WG6q8qO9Ep7_Aw9ls1Q1ZUh9z3w6Ctwp90M_A/viewform?usp=sf_link">
-            <div class="form-group">
-              <input type="text" name="entry.2005620554" value="" class="form-control name" id="entry_2005620554" dir="auto" aria-label="Name  " aria-required="true" placeholder="Name">
+        <p>
+          Please provide me with your name, email, and the reason you are contacting me.
+        </p>
+        <div id="gooleForm">
+          <script type="text/javascript">var submitted=false;</script>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+          onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfLRcWZWfa86WG6q8qO9Ep7_Aw9ls1Q1ZUh9z3w6Ctwp90M_A/formResponse" method="post"
+            class="needs-validation" target="hidden_iframe" onsubmit="submitted=true;">
+
+            <div class="form-group required row">
+              <label class="control-label col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" placeholder="Name" name="entry.2005620554" required class="form-control w-50">
+              </div>
             </div>
-            <div class="form-group">
-              <input type="text" name="entry.1045781291" value="" class="form-control email" id="entry_1045781291" dir="auto" aria-label="Email  " aria-required="true" placeholder="Email">
+        
+            <div class="form-group required row">
+              <label class="control-label col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" placeholder="Email address" name="emailAddress" autocomplete="email" required class="form-control w-50">
+              </div>
             </div>
-            <div class="form-group">
-              <textarea type="textarea" name="entry.1166974658" value="" class="form-control" id="entry_1166974658" dir="auto" aria-label="Reason for Inquiry" aria-required="true" placeholder="Reason for Inquiry"></textarea>
+          
+            <div class="form-group required row">
+              <label class="control-label col-sm-2 col-form-label">Reason for Inquery</label>
+              <div class="col-sm-10">
+                <textarea style="resize: none;" rows="10" placeholder="Inquery" name="entry.1166974658" required class="form-control w-50"></textarea>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
             </div>
 
-            <div class="form-group">
-              <input type="submit" id="submit" class="btn btn-default" name="submit" value="Submit">
-            </div>
-
-          </form>
+            </form>
         </div>
-
       </article>
     </main>
     <footer>
@@ -87,7 +108,6 @@
       <table>
         <tr>
           <td><a target="_blank" href="https://gitlab.com/shinn5112"><img src="content/images/gitlab.png" alt="GitLab"></a></td>
-          <td><a target="_blank" href="https://plus.google.com/u/0/113085467663502776151"><img src="content/images/googleplus.png" alt="GoogelPlus" /></a></td>
           <td><a href="mailto:shinn5112@gmail.com"><img src="content/images/email.png" alt="Email Me"></a></td>
           <td><a href="https://gitlab.com/shinn5112.atom"><img src="content/images/RSS.png" alt="Follow me on GitLab!"></a></td>
         </tr>
