@@ -43,3 +43,14 @@ function search(tableName) {
         }
     }
 }
+
+function flip(element){
+    var carrot = element.getElementsByTagName('i');
+    if( $(carrot).hasClass('fa-caret-down')){
+       $(carrot).removeClass('fa-caret-down');
+       $(carrot).addClass('fa-caret-up');
+    }else{
+        $(carrot).removeClass('fa-caret-up');
+        $(carrot).addClass('fa-caret-down');
+    }
+}
