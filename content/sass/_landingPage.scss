@@ -10,7 +10,12 @@
 }
 
 #greeting_content{
-  margin-top: 12.5em;
+  z-index: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   margin-left: 20em;
 }
 
@@ -34,4 +39,5 @@
     border: 3px solid $accent-color;
     border-radius: 1em;
     margin-right: 2em;
+    margin-top: -2em;
 }

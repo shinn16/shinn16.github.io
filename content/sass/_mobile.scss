@@ -13,6 +13,10 @@
     width: 50%;
   }
 
+  #me{
+    margin-top: 0;
+  }
+
 }
 // Phones
 @media screen and (max-width: 800px) {
@@ -25,6 +29,7 @@
     height: 4em;
 
     ul {
+      z-index: 1;
       background: $main-color;
       visibility: hidden;
       float: none;
@@ -107,7 +112,8 @@
   }
 
   #greeting_content{
-    margin-left: 2.5em;
+    top: 40%;
+    margin-left: 0;
   }
 
   #greeting {

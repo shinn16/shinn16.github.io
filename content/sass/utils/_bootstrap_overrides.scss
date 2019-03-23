@@ -39,3 +39,17 @@
     margin: auto !important;
   }
 }
+
+// mobile content
+// ###################################################
+
+
+
+// Phones
+@media screen and (max-width: 800px) {
+
+  .form-control.w-50{
+    width: 90% !important;
+  }
+
+}
