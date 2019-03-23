@@ -62,9 +62,9 @@
   }
   /*Classes*/
   .flex-container{
-    flex-direction: column;
-
+    
     .hobby-pic{
+      flex-direction: column;
       width: 100%;
     }
     .card{
