@@ -87,6 +87,9 @@
 
   #homeButton {
     top: -.1em;
+    span{
+      display: none;
+    }
   }
 
   #dropdownImg {
