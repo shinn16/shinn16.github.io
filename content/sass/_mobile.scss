@@ -5,14 +5,18 @@
     top: 0.05em;
   }
 
-  #greeting {
-    margin-top: 5em;
-    width: 40%;
+  #greeting_content{
+    margin-left: 5em;
   }
 
-  #me {
-    margin-top: 6em;
+  #greeting {
+    width: 50%;
   }
+
+  #me{
+    margin-top: 0;
+  }
+
 }
 // Phones
 @media screen and (max-width: 800px) {
@@ -56,6 +60,17 @@
     @include allFilter(grayscale(100%));
   }
   /*Classes*/
+  .flex-container{
+    
+    .hobby-pic{
+      flex-direction: column;
+      width: 100%;
+    }
+    .card{
+      width: 100%;
+    }
+  }
+
   /* IDS */
   #float-left,
   #float-right {
@@ -70,8 +85,10 @@
   }
 
   #homeButton {
-    font-size: 3em;
-    top: -.15em;
+    top: -.1em;
+    span{
+      display: none;
+    }
   }
 
   #dropdownImg {
@@ -88,31 +105,36 @@
     }
   }
   //****** Home ******/
+  #greeting_content{
+    position: inherit;
+    margin: auto;
+    transform: none;
+  }
+
   #me {
-    margin-top: 10%;
-    margin-left: 28%;
+    position: inherit;
     width: 40%;
     float: none;
+    margin-top: 2em;
+    margin-left: 30%;
   }
+
 
   #greeting {
     float: none;
+    text-align: center;
     margin: auto;
-    width: 100%;
-    padding-bottom: 1em;
+    width: 80%;
 
     h1 {
       width: 100%;
       font-size: 2em;
       text-align: center;
-      margin: auto;
     }
 
     p {
       font-size: 1.2em;
-      margin: auto;
       text-align: center;
-      width: 80%;
     }
   }
   //******* Main *******

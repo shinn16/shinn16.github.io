@@ -11,6 +11,19 @@
   }
 }
 
+.card{
+  width: 40%;
+}
+
+.card-title{
+  background-color: $accent-color;
+  color: white;
+  padding: 1em;
+  margin-top: -1em;
+  margin-left: -1em;
+  margin-right: -1em;
+}
+
 
 // modals
 .modal-dialog{
@@ -25,4 +38,18 @@
   p{
     margin: auto !important;
   }
+}
+
+// mobile content
+// ###################################################
+
+
+
+// Phones
+@media screen and (max-width: 800px) {
+
+  .form-control.w-50{
+    width: 90% !important;
+  }
+
 }

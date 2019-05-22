@@ -3,26 +3,23 @@
 
 <head>
   <!-- icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="content/icons/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="content/icons/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="content/icons/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="content/icons/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="content/icons/apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="content/icons/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="content/icons/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="content/icons/apple-touch-icon-152x152.png" />
-  <link rel="icon" type="image/png" href="content/icons/favicon-196x196.png" sizes="196x196" />
-  <link rel="icon" type="image/png" href="content/icons/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/png" href="content/icons/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="content/icons/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="content/icons/favicon-128.png" sizes="128x128" />
-  <meta name="application-name" content="&nbsp;" />
-  <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="content/icons/mstile-144x144.png" />
-  <meta name="msapplication-square70x70logo" content="content/icons/mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="content/icons/mstile-150x150.png" />
-  <meta name="msapplication-wide310x150logo" content="content/icons/mstile-310x150.png" />
-  <meta name="msapplication-square310x310logo" content="content/icons/mstile-310x310.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="content/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="content/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="content/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="content/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="content/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="content/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="content/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="content/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="content/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="content/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="content/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="content/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="content/icons/favicon-16x16.png">
+  <link rel="manifest" href="content/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#333333">
+  <meta name="msapplication-TileImage" content="content/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#333333">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +27,8 @@
   <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Popper JS -->
@@ -46,7 +45,7 @@
       <nav>
         <input type="checkbox" id="dropdown">
         <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
-        <a id="homeButton" href="index.html">{Patrick Shinn}</a>
+         <a id="homeButton" href="index.html"><img id="my-logo" src="/content/images/logo.png"> <span>Patrick Shinn</span></a>
         <ul id="navBar">
           <li><a data-toggle="tooltip" title="Learn about me!" href="about.html" id="currentPage">About</a></li>
           <li><a data-toggle="tooltip" title="Research, past and present" href="research.html">Research</a></li>
@@ -60,119 +59,246 @@
       <article>
         <h1>About Patrick</h1>
         <p>
-          From a very young age I have always loved to design and build things. Legos and Erector Sets were my favorite toys. In the fifth grade, a few friends and I wanted to design and build a model rocket that could go into space, though we never achieved our
-          lofty goal, we very much enjoyed the process of designing the rocket and building small models of it.
+          I grew up in the small town of <a target="_blank" href="https://en.wikipedia.org/wiki/Elkview,_West_Virginia">Elkview, WV.</a> Growing up in a small, rural community
+          possed a few issues for someone interested in computers such as myself. The first being that the area that I lived in did not recieve high speed internet until January of
+          2015. Up to that point, the only options were either dialup or satalite internet, neither of which were desireable. Although I had limited access to the bountify resources
+          the internet provides, I found ways to learn what I wanted. In high school, I would spend my lunch time in the computer lab learning to program or obtaining the newest copy
+          of <a target="_blank" href="https://www.ubuntu.com/">Ubuntu</a>. By the time I made it to college, I was profficient in the use of <a target="_blank" href="https://www.linuxfoundation.org/">Linux</a>
+          and capable of programming in <a target="_blank" href="https://www.python.org/">Python</a>. The struggles inherent trying to learn up to date information with limited access
+          to that information gave me strong self teaching skills and the resolve to use them.
         </p>
         <p>
-          That passion to design and build has only grown since then. I elected to go into the field of computer science because it is one place where creativity and passion can truly thrive. I am a massive supporter of open source software and the ideals that
-          come along with it. I hope to one day create a company that boasts a Linux based operating system that has the ability to compete head to head with Microsoft and Apple.
+          These skills were very useful during my time at <a target="_blank" href="www.marshall.edu">Marshall University</a>, they enabled me to succeed in my various research endeavours
+          that I undertook. I was able to teach myself to automate the management of multiple Ubuntu servers using shell scripts simulatneously, develop a wireless sensor network for flood detection and
+          environmental monitoring, and develop a data storage framework for semicondutor nano-crystals. I hope to continue such endeavours beyond graduation and work with an industry
+          leader who is driving innovation and technology into the future.
         </p>
-        <h3>Skills</h3>
+        <a data-toggle="collapse" href="#skills" role="button" aria-expanded="false" aria-controls="skills" onclick="flip(this);"><h2>Skills <i class="fas fa-caret-down"></i></h2></a>
         <hr/>
-        <p>
-          I have a wide range of programming skills, everything from Linux server automation through shell scripting, to web development, to wireless sensor networks. Below are lists of languages,
-          frameworks, and tools that I use most frequently.
-        </p>
-        <ul class="accolades">
-          <li><h4>Programming Skills</h4></li>
-          <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Shell Script</li>
-            <li>Arduino</li>
-            <li>Ruby</li>
-            <li>HTML</li>
-            <li>CSS, SCSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <li><h4>Libraries and Frameworks</h4></li>
-          <ul>
-            <li>Flask</li>
-            <li>Matplotlib</li>
-            <li>JavaFX</li>
-            <li>Ruby on Rails</li>
-            <li>JQuery</li>
-            <li>Bootstrap</li>
-          </ul>
-          <li><h4>Tools</h4></li>
-          <ul>
-            <li>Doxygen</li>
-            <li>Sphinx</li>
-            <li>Maven</li>
-            <li>Gradle</li>
-            <li>Clonezilla</li>
-          </ul>
-        </ul>
-        <h3>College</h3>
+        <div class="collapse" id="skills">
+          <p>
+            I have a wide range of programming skills, everything from Linux server automation through shell scripting, to web development, to wireless sensor networks. Below are lists of languages,
+            frameworks, and tools that I use most frequently.
+          </p>
+
+          <div class="flex-container">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Programming Languages</h5>
+                <ul class="card-text list-group d-flex flex-row flex-wrap">
+                  <li class="list-group-item w-50">Python <img src="content/images/python.png" alt="python" class="logo"></li>
+                  <li class="list-group-item w-50">Java <img src="content/images/java.png" alt="java" class="logo"></li>
+                  <li class="list-group-item w-50">Shell Script <img src="content/images/shellscript.png" alt="shell script" class="logo"></li>
+                  <li class="list-group-item w-50">Arduino <img src="content/images/arduino.png" alt="arduino" class="logo"></li>
+                  <li class="list-group-item w-50">Micro Python <img src="content/images/micropython.png" alt="micropython" class="logo"></li>
+                  <li class="list-group-item w-50">C++ <img src="content/images/c++.png" alt="C++" class="logo"></li>
+                  <li class="list-group-item w-50">Ruby <img src="content/images/ruby.png" alt="ruby" class="logo"></li>
+                  <li class="list-group-item w-50">HTML <img src="content/images/html.png" alt="HTML" class="logo"></li>
+                  <li class="list-group-item w-50">CSS, SCSS <img src="content/images/css.png" alt="CSS" class="logo"></li>
+                  <li class="list-group-item w-50">JavaScript <img src="content/images/js.png" alt="js" class="logo"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Libraries and Frameworks</h5>
+                <ul class="card-text list-group d-flex flex-row flex-wrap">
+                  <li class="list-group-item w-50">Flask <img src="content/images/flask.png" alt="flask" class="logo"></li>
+                  <li class="list-group-item w-50">SciKit-Learn <img src="content/images/scikitlearn.png" alt="scikit learn" class="logo"></li>
+                  <li class="list-group-item w-50">Ruby on Rails <img src="content/images/rails.png" alt="Ruby on Rails" class="logo"></li>
+                  <li class="list-group-item w-50">Bootstrap <img src="content/images/bootstrap.png" alt="bootstrap" class="logo"></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Tools</h5>
+                <ul class="card-text list-group d-flex flex-row flex-wrap">
+                  <li class="list-group-item w-50">Doxygen <img src="content/images/doxygen.png" alt="doxygen" class="logo"></li>
+                  <li class="list-group-item w-50">Sphinx <img src="content/images/sphinx.png" alt="sphinx" class="logo"></li>
+                  <li class="list-group-item w-50">Maven <img src="content/images/maven.png" alt="maven" class="long-logo"></li>
+                  <li class="list-group-item w-50">Gradle <img src="content/images/gradle.jpg" alt="gradle" class="logo"></li>
+                  <li class="list-group-item w-50">Platform IO <img src="content/images/platformio.png" alt="platformio" class="logo"></li>
+                  <li class="list-group-item w-50">GitLab Runner <img src="content/images/gitlabrunner.png" alt="gitlab runner" class="logo"></li>
+                  <li class="list-group-item w-50">Jetbrains IDEs <img src="content/images/jetbrains.png" alt="jetbrains" class="logo"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Server Administration</h5>
+                <ul class="card-text list-group d-flex flex-row flex-wrap">
+                  <li class="list-group-item w-50">Ubuntu Server <img src="content/images/ubuntu.png" alt="ubuntu" class="logo"></li>
+                  <li class="list-group-item w-50">Apache Web Server <img src="content/images/apache.png" alt="apache" class="logo"></li>
+                  <li class="list-group-item w-50">Mosquitto MQTT Server <img src="content/images/mosquitto.png" alt="mqtt" class="logo"></li>
+                  <li class="list-group-item w-50">Open SSH <img src="content/images/ssh.png" alt="ssh" class="logo"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">IoT Platforms</h5>
+                <ul class="card-text list-group d-flex flex-row flex-wrap">
+                  <li class="list-group-item w-50">Raspberry Pi <img src="content/images/rpi.png" alt="rpi" class="logo"></li>
+                  <li class="list-group-item w-50">Arduino <img src="content/images/arduino.png" alt="arduino" class="logo"></li>
+                  <li class="list-group-item w-50">ESP8266 <img src="content/images/esp8266.png" alt="esp8266" class="long-logo"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">3D Printing Software and Platforms</h5>
+                  <ul class="card-text list-group d-flex flex-row flex-wrap">
+                    <li class="list-group-item w-50">FreeCAD <img src="content/images/freecad.png" alt="FreeCAD" class="logo"></li>
+                    <li class="list-group-item w-50">Cura <img src="content/images/cura.png" alt="cura" class="logo"></li>
+                    <li class="list-group-item w-50">Astroprint <img src="content/images/astroprint.png" alt="Astroprint" class="logo"></li>
+                    <li class="list-group-item w-50">Anet A8 <img src="content/images/anet.jpg" alt="Anet" class="long-logo"></li>
+                    <li class="list-group-item w-50">Makerbot Replicator 2 <img src="content/images/makerbot.png" alt="Makerbot" class="logo"></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+        <br>
+        <a data-toggle="collapse" href="#education" role="button" aria-expanded="false" aria-controls="education" onclick="flip(this);"><h2>Education <i class="fas fa-caret-down"></i></h2></a>
         <hr />
-        <p>
-          I enrolled at <a href="http://www.marshall.edu/home/index.html" target="_blank">Marshall University</a> in 2015 and am projected to graduate as part of the class of 2019 with a Bachelor of Science in Computer Science.
-        </p>
-        <ul class="accolades">
-          <li>
-            <h4>Research Programs</h4></li>
-          <ul>
-            <li><a target="_blank" href="https://reu.ncsa.illinois.edu/">INCLUSION</a> at the <a target="_blank" href="http://illinois.edu/">University of Illinois</a> at Urbana-Champaign’s <a target="_blank" href="http://www.ncsa.illinois.edu/">National Center for Supercomputing Applications (NCSA)</a>              Summer 2018.</li>
-          </ul>
-          <li>
-            <h4>Research Grants</h4></li>
-          <ul>
-            <li><a target="_blank" href="http://www.wvspacegrant.org/about/wvsgc/">NASA West Virginia Space Grant Consortium Undergraduate Fellowship (2018)</a> ($5,000)</li>
-            <li><a target="_blank" href="http://www.wvspacegrant.org/about/wvsgc/">NASA West Virginia Space Grant Consortium Undergraduate Fellowship (2017)</a> ($5,000)</li>
-            <li>Marshall <a target="_blank" href="http://www.marshall.edu/sure/">Summer Undergraduate Research Expierence</a> Grant ($4,000)</li>
-          </ul>
-          <li>
-            <h4>Scholarships</h4></li>
-          <ul>
-            <li><a target="_blank" href="https://secure.cfwv.com/Financial_Aid_Planning/Scholarships/Scholarships_and_Grants/West_Virginia_PROMISE.aspx">West Virginia Promise Scholarship</a></li>
-            <li><a target="_blank" href="http://www.marshall.edu/sfa/types-of-aid/marshall-university-scholarships-for-metro-applicants/incoming-freshmen-merit-based-scholarships-for-metro-students/">Laidley Scholarship</a></li>
-            <li>Willis Scholarship</li>
-            <li><a target="_blank" href="https://www.redcrossblood.org/leaderssavelives">American Red Cross Scholarship</a></li>
-          </ul>
-          <li>
-            <h4>Academic Honors</h4></li>
-          <ul>
-            <li>Letter of Recognition from the Nation Center for Supercomputing Applications</li>
-            <li>Outstanding Freshmen in Computer Science</li>
-            <li>Dean's List, Fall 2017</li>
-            <li>Dean's List, Spring 2017</li>
-            <li>Dean's List, Fall 2016</li>
-            <li>Dean's List, Spring 2016</li>
-            <li>Dean's List, Fall 2015</li>
-          </ul>
-          <h4>Extracurricular Activities</h4>
-          <ul>
-            <li><a href="https://mugeeksandgadgets.github.io" target="_blank">Geeks and Gadgets</a> (Founder and President)</li>
-            <li>John Marshall Emerging Leaders Institute (JMELI)</li>
-            <li>Pottery Club</li>
-          </ul>
-        </ul>
-        <h3>High School</h3>
-        <hr />
-        <p>
-          I attended <a href="http://kanawha-k12.wvnet.edu/herberthoover/" target="_blank">Herbert Hoover High School</a> in Clendenin, WV. I attended Hoover from 2011 until I graduated in 2015.
-        </p>
-        <ul class="accolades">
-          <li>
-            <h4>Academic Honors</h4></li>
-          <ul>
-            <li>Graduated Highest Honors with a 4.52 GPA</li>
-            <li>Graduated 4th in class</li>
-            <li>Named most likely to succeed by the Class of 2015</li>
-            <li>Named Student of the Month numerous times</li>
-            <li>Graduated as an AP Scholar for completing 3 Advanced Placement Tests</li>
-            <li>Recieved recognition for completing over 500 hours of community service</li>
-          </ul>
-          <li>
-            <h4>Extracurricular Activities</h4></li>
-          <ul>
-            <li>Yearbook Photographer 2013 - 2015</li>
-            <li>Archery Team 2012 - 2015</li>
-            <li>Miscelanious Computer Repair/Trouble Shooting</li>
-            <li>United States Civil Air Patrol</li>
-            <li>Air Force Junior Office Reserve Training Corps (AFJROTC)</li>
-          </ul>
-        </ul>
+        <div class="collapse" id="education">
+          <h3>College</h3>
+          <hr />
+          <p>
+            I enrolled at <a href="http://www.marshall.edu/home/index.html" target="_blank">Marshall University</a> in 2015 and am projected to graduate as part of the class of 2019 with a Bachelor of Science in Computer Science.
+          </p>
+          <div class="flex-container">
+            <div class="list-group-item w-50">
+              <h4>Research Programs</h4>
+              <ul>
+                <li><a target="_blank" href="https://reu.ncsa.illinois.edu/">REU-INCLUSION</a> at the <a target="_blank" href="http://illinois.edu/">University of Illinois</a> at Urbana-Champaign’s <a target="_blank" href="http://www.ncsa.illinois.edu/">National Center for Supercomputing Applications (NCSA)</a>              Summer 2018.</li>
+              </ul>
+            </div>
+
+            <div class="list-group-item w-50">
+              <h4>Research Grants</h4>
+              <ul>
+                <li><a target="_blank" href="http://www.wvspacegrant.org/about/wvsgc/">NASA West Virginia Space Grant Consortium Undergraduate Fellowship (2018)</a> ($5,000)</li>
+                <li><a target="_blank" href="http://www.wvspacegrant.org/about/wvsgc/">NASA West Virginia Space Grant Consortium Undergraduate Fellowship (2017)</a> ($5,000)</li>
+                <li>Marshall <a target="_blank" href="http://www.marshall.edu/sure/">Summer Undergraduate Research Expierence</a> Grant ($4,000)</li>
+              </ul>
+            </div>
+
+            <div class="list-group-item w-50">
+              <h4>Scholarships</h4>
+              <ul>
+                <li><a target="_blank" href="https://secure.cfwv.com/Financial_Aid_Planning/Scholarships/Scholarships_and_Grants/West_Virginia_PROMISE.aspx">West Virginia Promise Scholarship</a></li>
+                <li><a target="_blank" href="http://www.marshall.edu/sfa/types-of-aid/marshall-university-scholarships-for-metro-applicants/incoming-freshmen-merit-based-scholarships-for-metro-students/">Laidley Scholarship</a></li>
+                <li>Willis Scholarship</li>
+                <li><a target="_blank" href="https://www.redcrossblood.org/leaderssavelives">American Red Cross Scholarship</a></li>
+              </ul>
+            </div>
+
+            <div class="list-group-item w-50">
+              <h4>Academic Honors</h4>
+              <ul>
+                <li>Dean's List, Fall 2017</li>
+                <li>Dean's List, Spring 2017</li>
+                <li>Dean's List, Fall 2016</li>
+                <li>Dean's List, Spring 2016</li>
+                <li>Dean's List, Fall 2015</li>
+              </ul>
+            </div>
+
+            <div class="list-group-item w-50">
+              <h4>Awards</h4>
+              <ul>
+                <li>Letter of Recognition from the Nation Center for Supercomputing Applications</li>
+                <li>Outstanding Freshmen in Computer Science</li>
+              </ul>
+            </div>
+
+            <div class="list-group-item w-50">
+              <h4>Extracurricular Activities</h4>
+              <ul>
+                <li><a href="https://mugeeksandgadgets.github.io" target="_blank">Geeks and Gadgets</a> (Founder and former President)</li>
+                <li>John Marshall Emerging Leaders Institute (JMELI)</li>
+                <li>Pottery Club</li>
+              </ul>
+            </div>
+            
+          </div>
+        
+          <br>
+
+          <h3>High School</h3>
+          <hr />
+          <p>
+            I attended <a href="http://kanawha-k12.wvnet.edu/herberthoover/" target="_blank">Herbert Hoover High School</a> in Clendenin, WV. I attended Hoover from 2011 until I graduated in 2015.
+          </p>
+
+          <div class="flex-container">
+            <div class="list-group-item w-50">
+              <h4>Academic Honors</h4>
+              <ul>
+                <li>Graduated Highest Honors with a 4.52 GPA</li>
+                <li>Graduated 4th in class</li>
+                <li>Named most likely to succeed by the Class of 2015</li>
+                <li>Named Student of the Month numerous times</li>
+                <li>Graduated as an AP Scholar for completing 3 Advanced Placement Tests</li>
+                <li>Recieved recognition for completing over 500 hours of community service</li>
+              </ul>
+            </div>
+
+            <div class="list-group-item w-50">
+              <h4>Extracurricular Activities</h4>
+              <ul>
+                <li>Yearbook Photographer 2013 - 2015</li>
+                <li>Archery Team 2012 - 2015</li>
+                <li>Miscelanious Computer Repair/Trouble Shooting</li>
+                <li>United States Civil Air Patrol</li>
+                <li>Air Force Junior Office Reserve Training Corps (AFJROTC)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <a data-toggle="collapse" href="#hobbies" role="button" aria-expanded="false" aria-controls="hobbies" onclick="flip(this);"><h2>Hobbies <i class="fas fa-caret-down"></i></h2></a>
+        <hr>
+        <div class="collapse" id="hobbies">
+          <p>
+            For the most part, my hobbies include just building and tinkering with things. In my free time, I like to design 3D models that I 
+            might find useful to have around, like tool holders and such. In fact, when I first got my 3D printer, the first things I printed
+            were upgrade parts for the printer. I do a lot with home automation as well, so I end up designing and building various sensors and
+            enclosures for said sensors that I can include in my home automation setup. If it involves an Arduino or Raspberry Pi, I probably 
+            mess with it for fun.
+          </p>
+          <p>
+            My other less technical hobbies revolve mostly around art and nature. I really enjoy digital photography, so when it's nice outside
+            I usualy take my camera out and go for a walk. I love taking landscape images of both nature and cities. I also enjoy taking macros,
+            the Raspberry Pi on the home page is actually a picture of mine. I appriciate the interesting perspectives and angles photography can provide.
+            I occasionally keep house plants when my cat lets me. I used to have a beautiful lucky bamoo and some bonsai trees, but the cat had 
+            other plans. Hopefully in the future I will be able to have those types of plants again. In the mean time, I will just have to be happy
+            with aquascaping in my fish tank where (hopefully) she can't reach the plants. You can find some pictures of my fish tank, former plants,
+            and some of my photos below if you're interested!
+          </p>
+          <h5>My Fish Tank and Bonsai</h5>
+          <hr>
+          <div class="flex-container">
+            <img class="hobby-pic" src="/content/images/fish1.jpg">
+            <img class="hobby-pic" src="/content/images/fish2.jpg">
+            <img class="hobby-pic" src="/content/images/tree1.jpg">
+          </div>
+          <h5>My 3 Favorite Pictures I've Taken</h5>
+          <hr>
+          <div class="flex-container">
+              <img class="hobby-pic" src="/content/images/fall.jpg">
+              <img class="hobby-pic" src="/content/images/old_main.jpg">
+              <img class="hobby-pic" src="/content/images/bridge.jpg">
+            </div>
+        </div>
       </article>
     </main>
     <footer>
@@ -180,7 +306,6 @@
       <table>
         <tr>
           <td><a target="_blank" href="https://gitlab.com/shinn5112"><img src="content/images/gitlab.png" alt="GitLab"></a></td>
-          <td><a target="_blank" href="https://plus.google.com/u/0/113085467663502776151"><img src="content/images/googleplus.png" alt="GoogelPlus" /></a></td>
           <td><a href="mailto:shinn5112@gmail.com"><img src="content/images/email.png" alt="Email Me"></a></td>
           <td><a href="https://gitlab.com/shinn5112.atom"><img src="content/images/RSS.png" alt="Follow me on GitLab!"></a></td>
         </tr>
@@ -218,7 +343,7 @@
                   <img data-toggle="tooltip" title="Click the address to the right" src="content/images/mail.png" />
                 </td>
                 <td class="align-middle">
-                  <a href="mailto:shinn16@marshall.edu">shinn16@marshall.edu</a>
+                  <a href="mailto:shinn5112@gmail.com">shinn5112@gmail.com</a>
                 </td>
               </tr>
               <tr>
@@ -226,7 +351,7 @@
                   <img data-toggle="tooltip" title="Click the address to the right" src="content/images/form.png" />
                 </td>
                 <td class="align-middle">
-                  <a target="_blank" href="https://goo.gl/forms/elzrgYJDBV7bC1K32">Contact Form</a>
+                  <a href="contact.html">Contact Form</a>
                 </td>
               </tr>
             </tbody>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="content/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="content/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="content/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="content/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="content/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="content/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="content/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="content/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="content/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="content/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="content/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="content/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="content/icons/favicon-16x16.png">
+  <link rel="manifest" href="content/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#333333">
+  <meta name="msapplication-TileImage" content="content/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#333333">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Shinn | Thank You!</title>
+  <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!-- my js scripts -->
+  <script type="text/javascript" src="content/javaScript/utils.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <nav>
+        <input type="checkbox" id="dropdown">
+        <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
+         <a id="homeButton" href="index.html"><img id="my-logo" src="/content/images/logo.png"> <span>Patrick Shinn</span></a>
+        <ul id="navBar">
+          <li><a data-toggle="tooltip" title="Learn about me!" href="about.html">About</a></li>
+          <li><a data-toggle="tooltip" title="Research, past and present" href="research.html">Research</a></li>
+          <li><a data-toggle="tooltip" title="Personal, school, and professional projects" href="projects.html">Projects</a></li>
+          <li><a href="#myModal" role="button" data-toggle="modal">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="topBorder" class="clear, borderLine"></div>
+    </header>
+    <main>
+        <article id="thankyou">
+            <h1>Thank You!!</h1>
+            <p>
+                I will email you back as soon as I can! Hold tight in the mean time! Here is a kitty to keep you company :)
+            </p>
+            <img src="content/images/kitty.jpg" alt="kitty">
+        </article>
+    </main>
+    <footer>
+      <div class="borderLine"></div>
+      <table>
+        <tr>
+          <td><a target="_blank" href="https://gitlab.com/shinn5112"><img src="content/images/gitlab.png" alt="GitLab"></a></td>
+          <td><a href="mailto:shinn5112@gmail.com"><img src="content/images/email.png" alt="Email Me"></a></td>
+          <td><a href="https://gitlab.com/shinn5112.atom"><img src="content/images/RSS.png" alt="Follow me on GitLab!"></a></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            &copy Patrick Shinn
+            <script type="text/javascript">
+              setYear();
+            </script>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </div>
+</body>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Contact</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="float-left">
+          To inquire about my projects, please use the email provided, for all other inqueries please follow the link below the email.
+        </div>
+        <div id="float-right">
+          <table id="contact_table">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  <img data-toggle="tooltip" title="Click the address to the right" src="content/images/mail.png" />
+                </td>
+                <td class="align-middle">
+                  <a href="mailto:shinn5112@gmail.com">shinn5112@gmail.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-middle">
+                  <img data-toggle="tooltip" title="Click the address to the right" src="content/images/form.png" />
+                </td>
+                <td class="align-middle">
+                  <a href="contact.html">Contact Form</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>
+          &copy Patrick Shinn
+          <script type="text/javascript">
+            setYear()
+          </script>
+        </p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>

@@ -3,26 +3,23 @@
 
 <head>
   <!-- icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="content/icons/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="content/icons/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="content/icons/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="content/icons/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="content/icons/apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="content/icons/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="content/icons/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="content/icons/apple-touch-icon-152x152.png" />
-  <link rel="icon" type="image/png" href="content/icons/favicon-196x196.png" sizes="196x196" />
-  <link rel="icon" type="image/png" href="content/icons/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/png" href="content/icons/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="content/icons/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="content/icons/favicon-128.png" sizes="128x128" />
-  <meta name="application-name" content="&nbsp;" />
-  <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="content/icons/mstile-144x144.png" />
-  <meta name="msapplication-square70x70logo" content="content/icons/mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="content/icons/mstile-150x150.png" />
-  <meta name="msapplication-wide310x150logo" content="content/icons/mstile-310x150.png" />
-  <meta name="msapplication-square310x310logo" content="content/icons/mstile-310x310.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="content/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="content/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="content/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="content/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="content/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="content/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="content/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="content/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="content/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="content/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="content/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="content/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="content/icons/favicon-16x16.png">
+  <link rel="manifest" href="content/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#333333">
+  <meta name="msapplication-TileImage" content="content/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#333333">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +27,8 @@
   <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Popper JS -->
@@ -46,7 +45,7 @@
       <nav>
         <input type="checkbox" id="dropdown">
         <label id="dropdownImg" for="dropdown"><img src="content/images/menu.png"></label>
-        <a class="headerNav" id="homeButton" href="index.html">{Patrick Shinn}</a>
+         <a id="homeButton" href="index.html"><img id="my-logo" src="/content/images/logo.png"> <span>Patrick Shinn</span></a>
         <ul id="navBar">
           <li><a data-toggle="tooltip" title="Learn about me!" href="about.html">About</a></li>
           <li><a data-toggle="tooltip" title="Research, past and present" href="research.html">Research</a></li>
@@ -69,7 +68,6 @@
       <table>
         <tr>
           <td><a target="_blank" href="https://gitlab.com/shinn5112"><img src="content/images/gitlab.png" alt="GitLab"></a></td>
-          <td><a target="_blank" href="https://plus.google.com/u/0/113085467663502776151"><img src="content/images/googleplus.png" alt="GoogelPlus" /></a></td>
           <td><a href="mailto:shinn5112@gmail.com"><img src="content/images/email.png" alt="Email Me"></a></td>
           <td><a href="https://gitlab.com/shinn5112.atom"><img src="content/images/RSS.png" alt="Follow me on GitLab!"></a></td>
         </tr>
@@ -107,7 +105,7 @@
                   <img data-toggle="tooltip" title="Click the address to the right" src="content/images/mail.png" />
                 </td>
                 <td class="align-middle">
-                  <a href="mailto:shinn16@marshall.edu">shinn16@marshall.edu</a>
+                  <a href="mailto:shinn5112@gmail.com">shinn5112@gmail.com</a>
                 </td>
               </tr>
               <tr>
@@ -115,7 +113,7 @@
                   <img data-toggle="tooltip" title="Click the address to the right" src="content/images/form.png" />
                 </td>
                 <td class="align-middle">
-                  <a target="_blank" href="https://goo.gl/forms/elzrgYJDBV7bC1K32">Contact Form</a>
+                  <a href="contact.html">Contact Form</a>
                 </td>
               </tr>
             </tbody>

@@ -16,9 +16,10 @@ function openTab(tabName, label) {
     var x = document.getElementsByClassName("tabs");
     for (i = 0; i < x.length; i++) {
         x[i].style.color = "white";
+        x[i].style.background = "#258be4";
     }
     document.getElementById(tabName).style.display = "block";
-    label.style.color = "#20a4f3";
+    label.style.background = "#0D599A";
 }
 
 // basic js search function for a table
@@ -40,5 +41,16 @@ function search(tableName) {
                 tr[i].style.display = "none";
             }
         }
+    }
+}
+
+function flip(element){
+    var carrot = element.getElementsByTagName('i');
+    if( $(carrot).hasClass('fa-caret-down')){
+       $(carrot).removeClass('fa-caret-down');
+       $(carrot).addClass('fa-caret-up');
+    }else{
+        $(carrot).removeClass('fa-caret-up');
+        $(carrot).addClass('fa-caret-down');
     }
 }
