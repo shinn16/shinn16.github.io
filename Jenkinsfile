@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
+        stage('Deploy') {
             steps {
-                sh 'cd /home; ls'
+                sh 'rm -r .*; mv * /var/www/html/personal-site'
             }
         }
     }
