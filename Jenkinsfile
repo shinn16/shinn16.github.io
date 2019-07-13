@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sh 'rm -r .*; mv * /var/www/html/personal-site'
+                sh 'rm -r .git* Jenkinsfile; mv * /var/www/html/personal-site'
             }
         }
     }
