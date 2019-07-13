@@ -10,5 +10,10 @@ pipeline{
 				echo "Hey, I did something nifty!"
 			}
 		}
+		stage('Deploy'){
+			steps{
+				sh'ssh cerberex@localhost "echo hello > test.text"'
+			}
+		}
 	}
 }
