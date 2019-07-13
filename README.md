@@ -1,2 +1,3 @@
 # personal_site
-Patrick Shinn's personal website
+Patrick Shinn's personal website.
+This is mostly a jenkins test for now.
