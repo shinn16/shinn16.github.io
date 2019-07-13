@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'ssh -v'
+                sh 'echo "am I working or crying?"'
             }
         }
     }
