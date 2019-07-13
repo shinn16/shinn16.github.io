@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        docker { image 'ubuntu:18.04' }
+        docker { image 'alpine-ssh' }
     }
     stages {
         stage('Test') {
             steps {
-                sh 'apt-get install -y ssh && echo "SSH installed succesfully!"'
+                sh 'ssh -v'
             }
         }
     }
