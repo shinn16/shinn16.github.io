@@ -1,6 +1,7 @@
 pipeline {
     agent {
-        docker { image 'alpine-ssh' }
+        docker { image 'kroniak/ssh-client
+' }
     }
     stages {
         stage('Test') {
