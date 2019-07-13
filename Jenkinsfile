@@ -4,7 +4,8 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'echo "am I working or crying?"'
-                sh 'ssh --help'
+                sh 'ssh cerberex@localhost exit'
+                sh 'echo "success!"'
             }
         }
     }
