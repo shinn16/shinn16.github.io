@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'cd /var/; ls; pwd'
+                sh 'cd /home; ls'
             }
         }
     }
