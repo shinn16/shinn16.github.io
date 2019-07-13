@@ -8,7 +8,7 @@ pipeline {
                 sh 'echo "Removing previous installation."'
                 try{
                     sh 'cd /var/www/html/personal-site/; rm -r *'
-                }catch{
+                }catch(Exception ex){
                     sh 'echo "Nothing to remove, moving on to deployment."'
                 }
             }
