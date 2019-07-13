@@ -4,7 +4,7 @@ pipeline {
         stage('Clean'){
             steps{
                 sh 'echo "Cleaning up repository."'
-                sh 'rm -r .git* Jenkinsfile *.md .*.yml'
+                sh 'rm -r .git* Jenkinsfile *.md'
             }
         }
         stage('Deploy') {
