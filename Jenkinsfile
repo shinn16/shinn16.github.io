@@ -1,13 +1,13 @@
 pipeline{
+	agent{
+		docker{
+			image 'ubuntu'
+		}
+	}
 	stages{
 		stage('Test'){
 			steps{
-				sh'echo "Hey, I did something nifty!"'
-			}
-		}
-		stage('Deploy'){
-			steps{
-				sh'ssh cerberex@localhost "echo hello > test.text"'
+				echo "Hey, I did something nifty!"
 			}
 		}
 	}
