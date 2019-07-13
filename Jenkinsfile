@@ -10,6 +10,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'Deploying files to webserver.'
+                sh 'ls'
                 sh 'mv * /var/www/html/personal-site'
             }
         }
